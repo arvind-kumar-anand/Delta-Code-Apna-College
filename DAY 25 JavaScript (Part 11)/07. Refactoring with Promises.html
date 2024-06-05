@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code by &hearts; Arvind</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <script>
+        // function saveToDb(data, success, failure) {
+        //     let internetSpped = Math.floor(Math.random() * 10) + 1;
+        //     if (internetSpped > 4) {
+        //         success();
+        //     } else {
+        //         failure();
+        //     }
+        // }
+
+        saveToDb("arvind kumar",
+            () => {
+                console.log("success1: your data was stored");
+                // One more time call back and data is storing
+                saveToDb("Kitty",
+                    () => {
+                        console.log("success2: your data was stored");
+                        // One more time call back and data is storing
+                        saveToDb("Raghu",
+                            () => {
+                                console.log("success3: your data was stored");
+                            },
+                            () => {
+                                console.log("failure3: Week connection data not saved");
+                            }
+                        );
+                    },
+                    () => {
+                        console.log("failure2: Week connection data not saved");
+                    }
+                );
+            },
+            () => {
+                console.log("failure1: Week connection data not saved");
+            }
+        );
+
+        function saveToDb(data) {
+            return new Promise((resolve, reject) => {
+                let internetSpped = Math.floor(Math.random() * 10) + 1;
+                if (internetSpped > 4) {
+                    resolve("success1: your data was stored");
+                } else {
+                    reject("failure1: Week connection data not saved");
+                }
+            })
+        }
+        console.log(saveToDb("Arvind Kumar Anand"));
+    </script>
+</body>
+
+</html>

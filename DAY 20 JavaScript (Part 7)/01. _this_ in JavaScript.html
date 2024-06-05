@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    body {
+      background-color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    let student = {
+      name: "Arvind",
+      eng: 86,
+      math: 96,
+      science: 90,
+      // Here on calling getAvg() in chrome inspect, it will give error because we can not directly call it
+      //   ReferenceError: eng is not defined
+      // at Object.getAvg(
+      // getAvg() {
+      //   let average = (eng + math + science) / 3;
+      //   console.log(name + " has an average marks of: " + average);
+      // },
+
+
+
+      // getAvg: function () {
+      //   let average = (this.eng + this.math + this.science) / 3;
+      //   console.log(this.name + " has an average marks of: " + average);
+      // },
+      getAvg() {
+        let average = (this.eng + this.math + this.science) / 3;
+        console.log(this.name + " has an average marks of: " + average);
+      },
+    };
+    console.log(student.getAvg());
+
+
+    //by default "this" will show window in chrome inspect
+    function getAvg() {
+      console.log(this);
+    }
+  </script>
+</body>
+
+</html>

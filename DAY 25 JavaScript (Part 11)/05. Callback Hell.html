@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code by &hearts; Arvind</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <h1>Arvind Kumar Anand</h1>
+    <script>
+        let heading = document.querySelector("h1");
+        // setTimeout(() => {
+        //     heading.style.color = "red";
+        // }, 1000);
+
+        // setTimeout(() => {
+        //     heading.style.color = "orange";
+        // }, 2000);
+
+        // setTimeout(() => {
+        //     heading.style.color = "green";
+        // }, 3000);
+
+        function changeColor(color, delay, nextColorChnage) {
+            setTimeout(() => {
+                heading.style.color = color;
+                if (nextColorChnage) {
+                    nextColorChnage();
+                }
+            }, delay);
+        }
+        changeColor("red", 1000, () => {
+            changeColor("orange", 1000, () => { // Color will change after 1 sec of previous execution
+                changeColor("yellow", 1000, () => {
+                    changeColor("green", 1000);
+                });
+            });
+        });
+
+
+        // setTimeout(() => {
+        //     changeColor("red");
+        // }, 1000);
+
+        // setTimeout(() => {
+        //     changeColor("orange");
+        // }, 2000);
+
+        // setTimeout(() => {
+        //     changeColor("green");
+        // }, 3000);
+
+    </script>
+</body>
+
+</html>

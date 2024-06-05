@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <script>
+
+        function oddEvenTest(request) {
+            if (request == "odd") {
+                // let odd = function (n) {
+                //     console.log(!(n % 2 == 0));
+                // }
+                // return odd;
+                return function (n) {
+                    console.log(!(n % 2 == 0));
+                }
+
+            } else if (request == "even") {
+                // let even = function (n) {
+                //     console.log(!(n % 2 == 0));
+                // }
+                // return even;
+                return function (n) {
+                    console.log(!(n % 2 == 0));
+                }
+
+            } else {
+                console.log("wrong request");
+            }
+        }
+
+        let request = "odd";
+        // let request = "even";
+        let func = oddEvenTest(request);
+        func(12);
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

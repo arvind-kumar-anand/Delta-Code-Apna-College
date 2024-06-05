@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        //ANSWWER - 1
+        let arr = [10, 100, 1000, 20, 40, 50];
+        let finalArray = arr.every((element) => {
+            return element % 10 == 0;
+        });
+        console.log(finalArray);
+
+        //ANSWWER - 2
+        let arr2 = [10, 100, 5, 20, 40, 50];
+        function minNumber(arr2) {
+            let minValueInArray = arr2.reduce((accumulator, element) => {
+                if (accumulator > element) {
+                    return element;
+                } else {
+                    return accumulator;
+                }
+            });
+            return minValueInArray;
+        }
+
+        console.log(minNumber(arr2));
+
+
+    </script>
+</body>
+
+</html>

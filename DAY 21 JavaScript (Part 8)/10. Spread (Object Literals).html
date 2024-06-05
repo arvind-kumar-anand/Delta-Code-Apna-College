@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        let student = {
+            name1: "Arvind Kumar Anand",
+            marks1: 96,
+            name2: "kitty",
+            marks2: 98,
+        };
+
+        let dataCopy = { ...student };
+        console.log(dataCopy);
+        console.log(student);
+        let dataCopy2 = { ...student, id2: 123, id3: 987, id4: 456, country: "India" };
+        console.log(dataCopy2);
+
+        let arrayList2 = [1, 2, 3, 4, 5, 6, 87, 9];
+        let object = { ...arrayList2 };
+        console.log(object);
+
+        let object2 = { ..."Arvind Kumar" };
+        console.log(object2);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Made by &hearts; Arvind</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <input placeholder="username" type="text" id="user"> <br><br><br>
+    <textarea id="textarea"></textarea>
+    <script>
+        let inputUser = document.querySelector("#user");
+        let textarea = document.querySelector("#textarea");
+        inputUser.addEventListener("input", function () {
+            console.log("input event occurs and its final value is = " + this.value);
+            textarea.innerText = this.value;
+        })
+
+
+    </script>
+</body>
+
+</html>

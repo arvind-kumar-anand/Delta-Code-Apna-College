@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code by &hearts; Arvind</title>
+    <style>
+        /* #images{
+        height: auto;
+        width: 500px;
+       } */
+    </style>
+</head>
+
+<body>
+    <h1>Made by &hearts; Arvind Kumar Anand</h1>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <h1>Get Random Cats Images</h1>
+    <button>Click Me!</button>
+    <br><br>
+    <img src="" alt="" id="images">
+    <script>
+        let button = document.querySelector("button");
+        let image = document.querySelector("#images");
+        // console.dir(image);
+        button.addEventListener("click", async function () {
+            // let randomImage = await getImage();
+            // console.log(randomImage);
+            image.src = await getImage();
+        })
+        
+        //API CALL 
+        let url = "https://dog.ceo/api/breeds/image/random";
+        async function getImage() {
+            try {
+                // let response = fetch(url); // UNDEFINED AS IT WILL NOT WAIT FOR THE RESPONSE
+                let response = await axios.get(url);
+                console.log(response);
+                // console.log(response.data);
+                console.log(response.data.message);
+                return response.data.message;
+            }
+            catch (error) {
+                console.log("erroe was = ", error);
+                return "NO IMAGES FOUND & ERROR FOUND";
+            }
+        }
+        console.log(getImage());
+    </script>
+</body>
+
+</html>

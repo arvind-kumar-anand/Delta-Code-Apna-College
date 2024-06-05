@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    body {
+      background-color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    const arrowFunction = () => {
+      console.log("this is arrow function");
+    };
+    arrowFunction();
+
+    const sum = (a, b) => {
+      return (a + b);
+    };
+    console.log(sum(4, 5));
+
+    const cube = (a) => {
+      // const cube => a {
+      // This will work even in single argument also
+      return (a * a * a);
+    };
+    console.log(cube(4));
+
+    const pow = (a, b) => {
+      return (a ** b);
+    };
+    console.log(pow(4, 5));
+
+  </script>
+</body>
+
+</html>

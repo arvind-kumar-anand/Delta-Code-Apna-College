@@ -1,0 +1,15 @@
+.container {
+    width: 600px;
+    height: 300px;
+    background-color: gray;
+    /* display: flex; */
+    display: grid;
+}
+
+.items {
+    width: 100px;
+    height: 50px;
+    border: 2px solid black;
+    background-color: green;
+    text-align: center;
+}

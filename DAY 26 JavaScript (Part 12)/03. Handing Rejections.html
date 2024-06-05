@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code by &hearts; Arvind</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <h1>Arvind Kumar Anand</h1>
+    <script>
+        // function getValue() {
+        //     return new Promise((resolve, reject) => {
+        //         setTimeout(() => {
+        //             let number = Math.floor(Math.random() * 10) + 1;
+        //             console.log(number);
+        //             resolve("promise was resolved");
+        //         }, 1000);
+        //     })
+        // }
+        // async function demo() {
+        //     // getValue();
+        //     // getValue();
+        //     // getValue();
+        //     await getValue();
+        //     await getValue();
+        //     await getValue();
+        //     await getValue();
+        //     await getValue();
+        //     getValue();
+        // }
+        // console.log(demo());
+
+
+
+        //OPTIMIZED CODE TO CHANGE THE COLOR
+        let heading = document.querySelector("h1");
+        function changeColor(color, delay) {
+            return new Promise((resolve, reject) => {
+                let number = Math.floor(Math.random() * 10) + 1;
+                if (number > 5) {
+                    console.log("Number greater than 5 is =", number);
+                    reject("Rejected as number is greather than 5");
+                }
+                else {
+                    console.log("Number less than 5 is =", number);
+                }
+                setTimeout(() => {
+                    heading.style.color = color;
+                    console.log("Color changed to = ", color);
+                    resolve("Colo changed successfully to");
+                }, delay);
+            })
+
+        }
+        async function callFunction() {
+            try {
+                await changeColor("red", 1000);
+                await changeColor("orange", 1000);
+                await changeColor("blue", 1000);
+                await changeColor("Purple", 1000);
+                changeColor("green", 1000);
+            }
+            catch (error) {
+                console.log("Error caught was = ", error);
+            }
+            let a = 20;
+            console.log("a is = ", a);
+        }
+        console.log(callFunction());
+
+
+
+
+        //   let heading = document.querySelector("h1");
+        //     function changeColor(color, delay) {
+        //         return new Promise((resolve, reject) => {
+        //             setTimeout(() => {
+        //                 heading.style.color = color;
+        //                 resolve("Colo changed successfully");
+        //             }, delay);
+        //         })
+        //     }
+        // console.log(changeColor("red", 5000));
+        // changeColor("red", 1000)
+        //     .then((result) => {
+        //         return changeColor("orange", 1000);
+        //     })
+        //     .then(() => {
+        //         return changeColor("blue", 1000);
+        //     })
+        //     .then(() => {
+        //         return changeColor("Purple", 1000);
+        //     })
+        //     .then(() => {
+        //         return changeColor("green", 1000);
+        //     })
+    </script>
+</body>
+
+</html>

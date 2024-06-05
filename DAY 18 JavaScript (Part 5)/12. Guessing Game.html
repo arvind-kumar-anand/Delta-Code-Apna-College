@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+
+        // const max = prompt("Number which will be guessed :")
+        // const random = (Math.floor(Math.random() * max)) + 1;
+        // console.log(random);
+        // let yourGuess = prompt("Enter your guess here :");
+        // while (true) {
+        //     if (yourGuess == "quit" || yourGuess == "QUIT" || yourGuess == "Quit") {
+        //         console.log("You Quit the Game");
+        //         break;
+        //     } else if (yourGuess == random) {
+        //         console.log("You guessed the number. Congratulations! random number was: " + random);
+        //         break;
+        //     }
+        //     yourGuess = prompt("Wrong! Enter your guess again here :");
+        // }
+
+        //INTRODUCING GUESS IN THE GAME
+        const max = prompt("Enter the maximum range :")
+        const randomNumber = (Math.floor(Math.random() * max)) + 1;
+        console.log(randomNumber);
+        let yourGuess = prompt("Enter your guess here :");
+        while (true) {
+            if (yourGuess == "quit" || yourGuess == "QUIT" || yourGuess == "Quit") {
+                console.log("You Quit the Game");
+                break;
+            } else if (yourGuess == randomNumber) {
+                console.log("You guessed the number. Congratulations! random number was: " + randomNumber);
+                break;
+            } else if (randomNumber > yourGuess) {
+                yourGuess = prompt("Hint: Your number is small, Please enter a large number ");
+            } else if (randomNumber < yourGuess) {
+                yourGuess = prompt("Hint: Your number is large, Please enter a small number ");
+            }
+        }
+
+
+
+    </script>
+</body>
+
+</html>

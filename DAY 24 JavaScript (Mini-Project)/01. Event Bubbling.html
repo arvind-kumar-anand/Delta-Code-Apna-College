@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Made by &hearts; Arvind</title>
+    <style>
+        div {
+            height: 200px;
+            width: 400px;
+            background-color: pink;
+        }
+
+        ul {
+            background-color: blue;
+        }
+
+        li {
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
+    </div>
+
+
+    <script>
+        let div = document.querySelector("div");
+        let uList = document.querySelector("ul");
+        let listItems = document.querySelectorAll("li");
+
+        div.addEventListener("click", function () {
+            // event.stopPropagation; 
+            console.log("div was clicked");
+        })
+        uList.addEventListener("click", function (event) {
+            event.stopPropagation(); //TO STOP THE PARENT PRINT ALSO
+            console.log("uList was clicked");
+        })
+        for (items of listItems) {
+            items.addEventListener("click", function () {
+                event.stopPropagation();
+                console.log("listItems was clicked");
+            })
+        }
+
+
+
+    </script>
+</body>
+
+</html>

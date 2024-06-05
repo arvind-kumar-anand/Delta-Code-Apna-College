@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Made by &hearts; Arvind</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <p>This is a paragraph</p>
+    <div class="box"></div>
+    <script>
+
+        let p = document.querySelector("p");
+        p.addEventListener("click", function () {
+            console.log("para was clicked");
+
+        })
+        let box = document.querySelector(".box");
+        box.addEventListener("mouseenter", function () {
+            console.log("mouse was hovered");
+        })
+        console.dir();
+
+    </script>
+</body>
+
+</html>

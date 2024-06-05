@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Made by &hearts; Arvind</title>
+    <style>
+        /* body {
+            text-align: center;
+            background-color: pink;
+        } */
+    </style>
+</head>
+
+<body>
+    <h1>Made by &hearts; Arvind Kumar Anand</h1>
+    <h1>To-Do APP</h1>
+    <input type="text" placeholder="enter your tasks" name="" id="tasks"> <br> <br>
+    <button>Add Your Task</button>
+    <ol>
+        <!-- <li>Code <button class="delete">Delete</button></li>
+        <li>Library <button class="delete">Delete</button></li> -->
+    </ol>
+
+    <script>
+        let inputTask = document.querySelector("#tasks");
+        let button = document.querySelector("button");
+        let olist = document.querySelector("ol");
+        let listItems = document.querySelectorAll("li");
+        button.addEventListener("click", function () {
+            let listItems = document.createElement("li");
+            listItems.innerText = inputTask.value;
+            let deleteButton = document.createElement("button");
+            deleteButton.innerText = "Delete";
+            deleteButton.classList.add("delete");
+            listItems.append(deleteButton);
+            olist.appendChild(listItems);
+            inputTask.value = "";
+        })
+        olist.addEventListener("click", function (event) {
+            if (event.target.nodeName == "BUTTON") {
+                let listItems = event.target.parentElement;
+                // console.log(listItems);
+                // console.log("delete");
+                listItems.remove();
+            }
+            // else {
+            //     console.log("dont delete");
+            // }
+        })
+
+        // THIS WILL DELETE ONLY ALREADY ADDED "li" BUT NOT NEWLY ADDED "li"
+        // let deleteButton = document.querySelectorAll(".delete");
+        // for (del of deleteButton) {
+        //     del.addEventListener("click", function () {
+        //         let parent = this.parentElement;
+        //         parent.remove();
+        //     });
+        // }
+
+    </script>
+</body>
+
+</html>

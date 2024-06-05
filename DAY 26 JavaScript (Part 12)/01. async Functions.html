@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code by &hearts; Arvind</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <script>
+        
+        // async function greet() {
+        //     // return "hello";
+        // }
+        async function greet() {
+            // abc.abc(); //[[PromiseState]]: "rejected"
+            // throw "some rando eroor"; //used to throw some random error
+            return "hello";
+        }
+        console.log(greet());
+        greet()
+            .then((result) => {
+                console.log(result);
+                console.log("Promise successfully resolved");
+            })
+            .catch((error) => {
+                console.log(error); //HERE (throw "some rando eroor";) IT WILL BE THROWN
+                console.log("Promise Rejected");
+            })
+
+
+        //ASYNC USED IN ARROW FUNCTION
+        let demo = async () => {
+            return 5;
+        }
+        console.log(demo());
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <script>
+        let start = ["january", "july", "march", "august",];
+
+        start.splice(1, 2, "december", "april", "february"); // 1st se start karke 2 elements delete kar do and 3 value add kar do
+        // console.log(start); // fir to isme sirf 1 elements ( january ) hi bachega
+        // start.splice(3); // 3rd INDEX se aage ka elements delete kar dega
+        // start.splice(0, 3);
+        console.log(start);
+
+        start.splice(0, 0, "december", "april", "february");
+        // start.splice(1, 1, "october");
+        console.log(start);
+    </script>
+</body>
+
+</html>

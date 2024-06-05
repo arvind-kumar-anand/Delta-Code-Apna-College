@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <script>
+
+        function outerFunction() {
+            let x = 5;
+            let y = 6;
+            function innerFunction() {
+                console.log(x);
+                console.log(y);
+            }
+            //THIS IS POSSIBLE
+            // let x = 5;
+            // let y = 6;
+            innerFunction();
+        }
+        // innerFunction();
+        //ERROR Because of scope is only inside the outer function 
+        outerFunction();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

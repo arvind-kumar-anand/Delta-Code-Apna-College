@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        // //ANSWER-1
+        // let arr = [1, 2, 3, 4, 5, 2, 6, 2, 3,];
+        // let num = 2;
+        // for (let i = 0; i < arr.length; i++) {
+        //     if (arr[i] == num) {
+        //         arr.splice(i, 1);
+        //     }
+        // }
+        // console.log(arr);
+
+        // //ANSWER-2
+        // let number1 = 287152;
+        // number1 = number1.toString();
+        // console.log(number1.length);
+        // console.log(number1);
+
+        // //ANSWER-3
+        // let number2 = 287152;
+        // let copy = number2;
+        // let sum = 0;
+        // while (copy > 0) {
+        //     digit = copy % 10;
+        //     sum += digit;
+        //     copy = Math.floor(copy / 10);
+        // }
+        // console.log(sum);
+
+        // //ANSWER-4
+        // let number = prompt("Enter the number you want to find the factorial of :");
+        // let factorial = 1;
+        // for (let i = 1; i <= number; i++) {
+        //     factorial = factorial * i;
+        // }
+        // console.log(factorial);
+
+        //ANSWER-5
+        let arr = [4, 5, 8, 2, 4, 9, 5.10, 20];
+        let i = 0;
+        let largest = 0;
+        while (i < arr.length) {
+            if (arr[i] > largest) {
+                largest = arr[i];
+            }
+            i++;
+        }
+        console.log(largest);
+
+
+    </script>
+</body>
+
+</html>

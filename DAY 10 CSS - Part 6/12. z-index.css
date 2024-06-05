@@ -1,0 +1,25 @@
+.box {
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    background-color: pink;
+}
+
+.one {
+    background-color: aquamarine;
+    /* STATIC AND DEFAULT POSITION RAHNE PAR Z-INDEX KAAM NAHI KARTA HAI */
+    /* position: static/default; */
+    position: relative;
+    /* AB YE KAAM KAR JAYEGA QKI RELAIVE POSITION PAR YE KAAM KARNE LAGTA HAI */
+    z-index: 1;
+    /* BY DEFAULT SABKI Z-INDEX VALUE O HOTI HAI */
+    /* z-index: auto(0); */
+}
+
+.two {
+    background-color: darksalmon;
+    position: relative;
+    bottom: 50px;
+    /* AGAR ISME 2 VALUE HUI TO YE AAGE AA JAYEGA */
+    /* z-index: 2; */
+}

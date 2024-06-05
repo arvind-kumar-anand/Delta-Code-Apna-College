@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <script>
+
+        //ANSWER-1
+        //elements larger than a number num
+        let arr = [8, 9, 10, 1, 2, 3, 4, 5, 6, 7];
+        let num = 5;
+        function getElements(array, nummber) {
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] > num) {
+                    console.log(arr[i]);
+                }
+            }
+        }
+        console.log("ANSWER of 1: ");
+        getElements(arr, num);
+
+        // ANSWER-2
+        //function to get String with all unique elements
+        let str = "abcdabcdefgggh";
+        function getUnique(str) {
+            let ans = "";
+            for (let i = 0; i < str.length; i++) {
+                let currChar = str[i];
+                if (ans.indexOf(currChar) == -1) {
+                    //if current character is not added, then add it in ans.
+                    //Otherwise it is a duplicate.
+                    ans += currChar;
+                }
+            }
+            return ans;
+        }
+        console.log("ANSWER of 2: ");
+        console.log(getUnique(str));
+
+        // ANSWER-3
+        //Returns the longest country name as output.
+        let countryArray = ["Australia", "Germany", "United States of America"];
+
+        function longestCountry(countryArray) {
+            let ansIndex = 0;
+            for (let i = 0; i < countryArray.length; i++) {
+                let ansLength = countryArray[ansIndex].length;
+                let currLen = countryArray[i].length;
+                if (currLen > ansLength) {
+                    ansIdx = i;
+                }
+            }
+            return countryArray[ansIdx];
+
+        }
+        console.log("ANSWER of 3: ");
+        console.log(longestCountry(countryArray));
+
+
+
+        // ANSWER-4
+        //function to count the number of vowels in a String argument.
+        let strr = "Kitty";
+        function countVowels(strr) {
+            let count = 0;
+            for (let i = 0; i < strr.length; i++) {
+                if (strr.charAt(i) == "a" ||
+                    strr.charAt(i) == "e" ||
+                    strr.charAt(i) == "i" ||
+                    strr.charAt(i) == "o" ||
+                    strr.charAt(i) == "u"
+                ) {
+                    count++;
+                }
+            }
+
+            return count;
+        }
+        console.log("ANSWER of 4: ");
+        console.log(countVowels(strr));
+
+        // ANSWER-5
+        // function to generate a random number within a range (start, end).
+        let start = 100;
+        let end = 200;
+        function generateRandom(start, end) {
+            let diff = end - start;
+            return Math.floor(Math.random() * diff) + start;
+        }
+        console.log("ANSWER of 5: ");
+        console.log(generateRandom(start, end));
+
+    </script>
+</body>
+
+</html>

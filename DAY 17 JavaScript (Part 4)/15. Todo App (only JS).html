@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Entet the "button" to do so</h1>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // TO ADD OPERATION
+        // let toDo = [];
+        // let request = prompt("Please enter ur task which you want to do");
+
+        // while (true) {
+        //     if (request == "quit") {
+        //         console.log("you quit the toDo app");
+        //         break;
+        //     }
+
+        //     if (request == "list") {
+        //         console.log("_____________");
+        //         for (task of toDo) {
+        //             console.log(task);
+        //         }
+        //         console.log("_____________");
+        //     } else if (request == "add") {
+        //         let task = prompt("Please enter ur task want to add");
+        //         toDo.push(task);
+        //         console.log("task added");
+        //     }
+        //     request = prompt("Please enter ur task which you want to do");
+        // }
+        // console.log(toDo);
+
+
+
+        // TO DELETE OPERATION
+        let toDo = [];
+        let request = prompt("Please enter which you want to do");
+
+        while (true) {
+            if (request == "quit") {
+                console.log("you quit the toDo app");
+                break;
+            }
+            if (request == "list") {
+                console.log("_____________");
+                for (let i = 0; i < toDo.length; i++) {
+                    console.log(i, toDo[i]);
+                }
+                console.log("_____________");
+            } else if (request == "add") {
+                let task = prompt("Please enter ur task which you want to add");
+                toDo.push(task);
+                console.log("task added");
+            } else if (request == "delete") {
+                let task = prompt("Please enter ur task whic you want to delete");
+                toDo.splice(task, 1);
+                console.log("task deletd");
+            }
+
+            request = prompt("Please enter which you want to do");
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+.container {
+    width: 600px;
+    height: 300px;
+    background-color: gray;
+    /* display: flex; */
+    display: grid;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px;
+
+}
+
+.items {
+    /* width: 60px;
+    height: 60px; */
+    border: 2px solid black;
+    background-color: #43c943;
+    text-align: center;
+}
+
+#first {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-row-end: 4;
+    grid-row-end: 5;
+    /* SHORTHAND */
+    grid-row: 1/4;
+    /* 1 KE BAAD 3,4,8 TAK SPACE CHAHIYE */
+    grid-row: 1/span 3;
+    grid-row: 1/span 5;
+    /* YE KAAM NAHI KAR RAHA HAI  */
+    /* grid-row: 1/span 8; */
+}
+#second {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-row-end: 4;
+    grid-row-end: 5;
+    /* SHORTHAND */
+    grid-row: 1/4;
+    /* 1 KE BAAD 3,4,8 TAK SPACE CHAHIYE */
+    grid-row: 1/span 3;
+    grid-row: 1/span 5;
+    /* YE KAAM NAHI KAR RAHA HAI  */
+    grid-row: 1/span 8;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    body {
+      background-color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    console.log("Hello");
+    console.log("Hello");
+    let id1 = setInterval(() => {
+      console.log("This is setInterval function executed in every 5 sec");
+    }, 2000);
+
+    let id2 = setInterval(() => {
+      console.log("This is setInterval function executed in every 5 sec");
+    }, 3000);
+    console.log(id1);
+    console.log(id2);
+    clearInterval(id2); //This will stop the execution of the program
+    clearInterval(id1); //This will stop the execution of the program
+    //We can use the "ID" of the above "setInterval" function 
+    clearInterval(2); //This will stop the execution of the program
+    clearInterval(1); //This will stop the execution of the program
+
+    console.log("welcome!");
+    console.log("welcome!");
+  </script>
+</body>
+
+</html>

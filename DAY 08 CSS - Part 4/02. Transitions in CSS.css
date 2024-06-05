@@ -1,0 +1,16 @@
+div {
+  height: 200px;
+  width: 200px;
+  background-color: #4dff00ff;
+  margin: 0 auto;
+  margin-top: 20px;
+  /* transition: property_name(all- if all apply)    time_of_transition    timing_function   delay */
+  transition: margin-top 1s ease-in 0s, border-radius 1s ease-in 0s;
+}
+
+div:hover {
+  background-color: red;
+  border-radius: 50%;
+  margin-top: 100px;
+  /* transition-duration: 0.5s; */
+}

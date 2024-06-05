@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <script>
+        let start = ["january", "july", "march", "august",];
+        let mixedArrays = [1, "arvind", 2, "raghu"];
+        let marks = [1, 2, 3, 55, 66, 777];
+
+        let newArrays1 = start.concat(mixedArrays);
+        console.log(newArrays1);
+
+        let newArrays2 = mixedArrays.concat(marks);
+        console.log(newArrays2);
+
+        let newArrays3 = mixedArrays.concat(mixedArrays);
+        console.log(newArrays3);
+
+        let newArrays4 = mixedArrays.concat(start);
+        console.log(newArrays4);
+
+        start.reverse();
+        console.log(start);  //REMEMBER THIS THAT IT WILL CHANGE IN MY ORIGINAL ARRAY
+        let newArrays5 = start.concat(mixedArrays);
+        console.log(newArrays5);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <script>
+        // let greet = "hello";
+        // function changeGreet() {
+        //     let greet = "Namaste";
+        //     console.log(greet);
+        //     function innerGreet() {
+        //         console.log(greet);
+        //     }
+
+        // }
+
+        // console.log(greet);
+        // changeGreet();
+
+
+        
+        //AFTER CALLING innerGreet Function
+        let greet = "hello";
+        function changeGreet() {
+            let greet = "Namaste";
+            console.log(greet);
+            function innerGreet() {
+                console.log(greet);
+            }
+            innerGreet();
+        }
+
+        console.log(greet);
+        changeGreet();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

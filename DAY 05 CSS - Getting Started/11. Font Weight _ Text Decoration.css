@@ -1,0 +1,59 @@
+h2 {
+  font-weight: normal;
+}
+
+p {
+  font-weight: bold;
+}
+
+p {
+  font-weight: 100;
+}
+
+p {
+  text-align: justify;
+}
+
+p {
+  text-decoration: overline;
+}
+
+p {
+  text-decoration: underline;
+}
+
+h1 {
+  text-decoration: underline;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1 {
+  text-decoration-color: goldenrod;
+}
+
+h1 {
+  text-decoration-style: double;
+}
+
+h1 {
+  text-decoration-style: dotted;
+}
+
+h1 {
+  text-decoration-style: wavy;
+}
+
+h1 {
+  text-decoration-style: dashed;
+}
+
+h1 {
+  text-decoration: line-through;
+}
+
+a {
+  text-decoration: none;
+}

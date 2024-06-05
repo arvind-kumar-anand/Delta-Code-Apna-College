@@ -1,0 +1,31 @@
+.container {
+    width: 600px;
+    height: 300px;
+    background-color: gray;
+    /* display: flex; */
+    display: grid;
+    /* CHALO SIRF 3 TRACK BANATE HAI */
+    /* grid-template-rows: 150px 100px 50px; */
+    /* grid-template-columns: 100px 100px 100px; */
+    /* grid-template-rows: 50px 150px 50px 50px; */
+    /* grid-template-columns: 50px 150px 50px 50px; */
+    /* grid-template-rows: 50px 100px 50px 60px 50px; */
+    /* grid-template-rows: 60px 60px 60px 60px 60px; */
+    /* grid-template-rows: 60px 60px 60px 60px; */
+    /* grid-template-columns: 60px 60px; */
+    grid-template-columns: 60px 60px 60px;
+    grid-template-rows: 60px 60px 60px 60px;
+    grid-template-rows: auto;
+    /* NOT PREFERED */
+    grid-template-rows: auto auto auto auto;
+
+}
+
+.items {
+    width: 60px;
+    /* height: 50px; */
+    height: 60px;
+    border: 2px solid black;
+    background-color: #43c943;
+    text-align: center;
+}

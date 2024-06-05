@@ -1,0 +1,44 @@
+.container {
+    width: 600px;
+    height: 300px;
+    background-color: gray;
+    /* display: flex; */
+    display: grid;
+    /* ISKO INLINE GRID KARKE SAME LINE ME DIKHA SAKTE HAI */
+    display: inline-grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    /* FOR HORIZONTAL  */
+    justify-items: start;
+    justify-items: end;
+    justify-items: center;
+    /* FOR VERTICCAL  */
+    align-items: start;
+    align-items: end;
+    /* FOR BOTH HORIZONTAL AND VERTICCAL */
+    place-items: center;
+    place-items: start;
+    place-items: end;
+}
+
+.items {
+    width: 60px;
+    height: 40px;
+    border: 2px solid black;
+    background-color: #43c943;
+    text-align: center;
+}
+
+
+#first,
+#second {
+    justify-self: start;
+    justify-self: end;
+    align-self: start;
+    align-self: end;
+    align-self: center;
+    place-items: center;
+    /* place-items: start;
+    place-items: end; */
+}

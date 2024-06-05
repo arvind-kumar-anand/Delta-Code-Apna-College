@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <script>
+
+
+        function multipleGreet(func, count) {
+            for (let i = 1; i <= count; i++) {
+                func();
+            }
+
+        }
+
+        let greet = function () {
+            console.log("Namaste");
+        }
+
+        multipleGreet(greet, 5);
+        //Do not pass in the funtion as "greet()" 
+        multipleGreet(function hello() { console.log("Hello") }, 5);//directly pass a function 
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

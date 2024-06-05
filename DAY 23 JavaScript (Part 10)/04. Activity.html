@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Made by &hearts; Arvind</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: pink;
+        }
+
+        div {
+            height: 100px;
+            width: 500px;
+            border: 1px solid black;
+            text-align: center;
+            margin: auto;
+        }
+
+        button {
+            background-color: lightsalmon;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Made by &hearts; Arvind Kumar Anand</h1>
+    <h3>Choose a random color</h3>
+    <button>Generate Color</button> <br><br>
+    <div>This is a your new Background color</div>
+
+    <script>
+        let h3 = document.querySelector("h3");
+        let button = document.querySelector("button");
+        button.addEventListener("click", function () {
+            h3.innerText = getRandomColor();
+            div.style.backgroundColor = getRandomColor();
+        })
+        function getRandomColor() {
+            let r = Math.floor(256 * Math.random());
+            let g = Math.floor(256 * Math.random());
+            let b = Math.floor(256 * Math.random());
+            let rgbColor = `RGB(${r},${g},${b})`;
+            return rgbColor;
+        }
+        let div = document.querySelector("div");
+    </script>
+</body>
+
+</html>

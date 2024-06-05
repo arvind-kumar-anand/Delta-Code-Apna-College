@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <script>
+        let start = ["january", "july", "march", "august",];
+        console.log(start.indexOf("july"));//1
+        console.log(start.indexOf("march")); //2
+        console.log(start.indexOf("august"));//3
+        console.log(start.indexOf("JULY"));//-1 bcoz it does not exist
+
+        console.log(start.includes("july"));
+        console.log(start.includes("JULY"));
+
+    </script>
+</body>
+
+</html>

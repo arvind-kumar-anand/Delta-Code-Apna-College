@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <script src="22. Arrays References.js">
+        console.log("name" == "name"); //TRUE
+        console.log("name" === "name"); //TRUE
+        // Arrya's adress will not be same that's why 
+        //it will always be at different memory location 
+        console.log([1] == [1]); //false
+        // console.log([1] === [1]); //This condition will always return 'false' since JavaScript compares objects by reference, not value.
+        console.log([] == []); //false
+        // console.log([] === []); ////This condition will always return 'false' since JavaScript compares objects by reference, not value.
+
+        let Arr = ["arvind", "raghu", "kitty"];
+        let newArr = Arr;
+        console.log(Arr == newArr);//TRUE bcoz it pointed to the same array
+        console.log(Arr === newArr); //TRUE bcoz it pointed to the same array and 
+        //memory of that array is same also
+        console.log(Arr);
+        console.log(newArr);
+
+        Arr.push("pk");
+        console.log(Arr);// value will be pushed
+        console.log(newArr);// value will exactly same as "Arr" array
+
+        //OR
+        // newArr.push("pk");
+        // console.log(Arr);
+        // console.log(newArr);
+
+        Arr.pop("pk");
+        console.log(Arr);
+        console.log(newArr);
+    </script>
+</body>
+
+</html>

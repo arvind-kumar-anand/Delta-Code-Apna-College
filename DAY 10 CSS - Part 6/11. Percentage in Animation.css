@@ -1,0 +1,68 @@
+.box {
+    height: 100px;
+    width: 300px;
+    background-color: pink;
+    /* animation-name: fontArvind;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal; */
+    /* SHORTHAND FOR THE ABOVE ALL ANIMATION */
+    animation: fontArvind 4s ease-in 0s infinite normal;
+}
+
+/* @keyframe Animation_Name */
+/* SARE ANIMATION EK ME LIKH SAKTE HAI */
+@keyframes fontArvind {
+    0% {
+        font-size: 20px;
+        background-color: green;
+        width: 50px;
+    }
+
+    50% {
+        font-size: 40px;
+        background-color: red;
+        width: 200px;
+        /* border-radius: 20px; */
+    }
+
+    75% {
+        font-size: 60px;
+        background-color: pink;
+        width: 300px;
+        /* border-radius: 20px; */
+    }
+
+
+    100% {
+        font-size: 80px;
+        background-color: gold;
+        width: 500px;
+        /* border-radius: 20px; */
+    }
+
+}
+
+/* 
+@keyframes colorchange {
+    from {
+        background-color: red;
+    }
+
+    to {
+        background-color: black;
+    }
+
+}
+
+@keyframes widthchange {
+    from {
+        width: 50px;
+    }
+
+    to {
+        width: 500px;
+    }
+} */

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code by &hearts; Arvind</title>
+    <style>
+        body{
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <h1>Get Random Facts about Cats</h1>
+    <button>Click Me!</button>
+    <h2 id="facts"></h2>
+    <script>
+        let button = document.querySelector("button");
+        let heading2 = document.querySelector("h2");
+        button.addEventListener("click", async function () {
+            let randomFact = await getFact();
+            console.log(randomFact);
+            heading2.innerText = randomFact;
+        })
+        //API CALL 
+        let url = "https://catfact.ninja/fact";
+        async function getFact() {
+            try {
+                // let response = fetch(url); // UNDEFINED AS IT WILL NOT WAIT FOR THE RESPONSE
+                let response = await axios.get(url);
+                // console.log(response);
+                // console.log(response.data);
+                // console.log(response.data.fact);
+                return response.data.fact;
+            }
+            catch (error) {
+                console.log("erroe was = ", error);
+                return "NO FACT FOUND & ERROR FOUND";
+            }
+        }
+        console.log(getFact());
+
+
+
+
+        // AND TO AVOID ANY ERROR WE USE TRY AND CATCH
+        // let url = "https://catfact.ninja/fact2";
+        // async function getFact() {
+        //     try {
+        //         // let response = fetch(url); // UNDEFINED AS IT WILL NOT WAIT FOR THE RESPONSE
+        //         let response = await fetch(url);
+        //         let data = await response.json();
+        //         console.log(data);
+        //         console.log(data.fact);
+
+        //         let response2 = await fetch(url);
+        //         let data2 = await response2.json();
+        //         console.log(data2);
+        //         console.log(data2.fact);
+
+
+        //         let response3 = await fetch(url);
+        //         let data3 = await response3.json();
+        //         console.log(data3);
+        //         console.log(data3.fact);
+
+
+        //         let response4 = await fetch(url);
+        //         let data4 = await response4.json();
+        //         console.log(data4);
+        //         console.log(data4.fact);
+        //     }
+        //     catch (error) {
+        //         console.log("erroe was = ", error)
+        //     }
+        //     console.log("This will still be executed even if there is an error in the catch block.");
+        // }
+        // console.log(getFact());
+
+    </script>
+</body>
+
+</html>

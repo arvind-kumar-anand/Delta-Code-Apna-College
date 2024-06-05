@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <script>
+
+        const calculator = {
+            num: 10,
+            add: function (a, b) {
+                return a + b;
+            },
+            subs: function (a, b) {
+                return a - b;
+            },
+            mult: function (a, b) {
+                return a * b;
+            },
+            div: function (a, b) {
+                return a / b;
+            },
+            modulo: function (a, b) {
+                return a % b;
+            },
+        }
+
+        console.log(calculator);
+        console.log(calculator.add);
+        console.log(calculator.add(4, 5));
+        console.log(calculator.subs(4, 5));
+        console.log(calculator.mult(4, 5));
+        console.log(calculator.div(4, 5));
+        console.log(calculator.modulo(4, 5));
+
+
+
+
+        //SHORTHAND
+        // const calculator = {
+        //     num: 10,
+        //     add(a, b) {
+        //         return a + b;
+        //     },
+        //     subs(a, b) {
+        //         return a - b;
+        //     },
+        //     mult(a, b) {
+        //         return a * b;
+        //     },
+        //     div(a, b) {
+        //         return a / b;
+        //     },
+        //     modulo(a, b) {
+        //         return a % b;
+        //     },
+        // }
+
+        // console.log(calculator);
+        // console.log(calculator.add);
+        // console.log(calculator.add(4, 5));
+        // console.log(calculator.subs(4, 5));
+        // console.log(calculator.mult(4, 5));
+        // console.log(calculator.div(4, 5));
+        // console.log(calculator.modulo(4, 5));
+
+
+
+
+    </script>
+</body>
+
+</html>

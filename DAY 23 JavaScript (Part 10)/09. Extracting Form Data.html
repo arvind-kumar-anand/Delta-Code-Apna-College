@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Made by &hearts; Arvind</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <form action="/action">
+        <input placeholder="username" type="text" id="user">
+        <input type="password" id="pass" placeholder="password">
+        <button>Register</button>
+    </form>
+
+    <script>
+        let forms = document.querySelector("form");
+        let inputUser = document.querySelector("#user");
+        let inputPass = document.querySelector("#pass");
+        forms.addEventListener("submit", function (event) {
+            event.preventDefault(); //Prevent to go on "/action" (else it is giving errors)
+            // console.dir(inputUser);
+            // console.log(inputUser.innerText); //THIS IS NOT USED TO PRINT THE VALUE
+            // console.log(inputUser.value);
+            console.log("Input Value for username is = " + inputUser.value);
+            console.log("Input Value for password is = " + inputPass.value);
+            alert(`Hi ${inputUser.value}, ${inputPass.value} is your password`);
+        })
+
+    </script>
+</body>
+
+</html>

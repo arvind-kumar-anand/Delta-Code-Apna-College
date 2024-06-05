@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+
+        const threads = {
+            username: "@arvind.kumar.anand",
+            followers: 500,
+            Likes: 100,
+            Comments: 70,
+            Share: 80,
+            reposts: 50,
+            content: "This is your content",
+            tags: ["@arvind", "@raghu", "@pk singh"],
+        };
+        threads.reposts = 100; // To update the values
+        console.log(threads); // update the "repost" value from "50" to "100"
+        // threads.reposts = "A"; // So we can change the value in string whatever the previous value was...
+        threads.newProp = "this is new properties added"; // Use to create the new key properties
+        console.log(threads);// A new key "newProp" will be added in "threads" object created
+        threads.gender = "male";
+        console.log(threads); //A new key "gender" will be added in "threads" object created
+        delete threads.content; // use to delete the key value from the object created
+        console.log(threads); // Final object with their key values will be printed
+
+    </script>
+</body>
+
+</html>

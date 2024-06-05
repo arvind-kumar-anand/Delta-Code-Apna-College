@@ -1,0 +1,22 @@
+* {
+    font-family: Courier New;
+}
+
+h1 {
+    color: #1b74e4;
+}
+
+#searchbtn {
+    background-color: black;
+    color: white;
+}
+
+.userbtn {
+    background-color: aqua;
+}
+
+/* WE CAN DO THIS BY FOLLOWING ALSO USING ID SELECTOR */
+#a,
+#b {
+    background-color: aqua;
+}

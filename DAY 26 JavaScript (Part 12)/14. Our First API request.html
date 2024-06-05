@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code by &hearts; Arvind</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <script>
+        let url = "https://catfact.ninja/fact";
+        fetch(url)
+            .then((response) => { //Response will throw resolve value 
+                // console.log("response was - ", response);
+                // response.json();// it will help to read our data (readable formate data will returned)
+                // console.log(response.json()); // return a promises details
+                // response.json()
+                //     .then((data) => {
+                //         console.log("data fetched was - ", data);
+                //     });
+                return response.json();
+            })
+            .then((data1) => {
+                console.log(data1); //data in the JSON Format
+                console.log("Data 1 is =", data1.fact); //This will print data in  string format in the console 
+                return fetch(url);
+            })
+            .then((response) => {
+                // console.log("response was - ", response);
+                return response.json();
+            })
+            .then((data2) => {
+                console.log(data2); //data in the JSON Format
+                console.log("Data 2 is =", data2.fact); //This will print data in  string format in the console
+            })
+            .catch((error) => {
+                console.log("error was - ", error);
+            })
+
+        console.log("Happy Moment"); //It will be printed first as it wil not wait for the other code to execute
+    </script>
+</body>
+
+</html>

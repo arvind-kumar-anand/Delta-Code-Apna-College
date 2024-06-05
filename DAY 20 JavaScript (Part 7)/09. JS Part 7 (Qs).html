@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        //ANSWER - 1
+        let arrayAverage = (arr) => {
+            let sum = 0;
+            for (let i = 0; i < arr.length; i++) {
+                sum = sum + arr[i];
+            }
+            return sum / arr.length;
+        };
+        console.log(arrayAverage([7, 6, 8]));
+
+        //ANSWER - 2
+        let isEven = (n) => {
+            return n % 2 == 0;
+        }
+        console.log(isEven(8));
+
+        //ANSWER - 3
+        // const object = {
+        //     message: "Hello World",
+        //     logMessage() {
+        //         console.log(this.message);
+        //     }
+        // };
+        // setTimeout(object.message, 1000);
+
+        //ANSWER - 4
+        let length = 4;
+        function callback() {
+            console.log(this.length);
+        }
+        const object2 = {
+            length: 5,
+            method(callback) {
+                callback();
+            },
+        }
+        object2.method(callback, 1, 2);
+    </script>
+</body>
+
+</html>

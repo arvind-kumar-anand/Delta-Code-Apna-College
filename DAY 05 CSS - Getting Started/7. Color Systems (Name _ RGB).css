@@ -1,0 +1,43 @@
+body {
+  background-color: rgb(218, 238, 253);
+}
+
+h1 {
+  color: red;
+}
+
+h2 {
+  color: black;
+}
+
+h3 {
+  color: pink;
+}
+
+h4 {
+  color: purple;
+}
+
+h5 {
+  color: magenta;
+}
+
+h6 {
+  color: teal;
+}
+
+h1 {
+  color: rgb(0, 255, 0);
+}
+
+h2 {
+  color: rgb(255, 0, 0);
+}
+
+h3 {
+  color: rgb(0, 0, 255);
+}
+
+h4 {
+  color: rgb(255, 255, 0);
+}

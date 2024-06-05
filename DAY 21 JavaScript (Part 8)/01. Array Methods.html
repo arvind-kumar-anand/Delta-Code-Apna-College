@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        let arr = [1, 2, 3, 4, 5];
+        let print = function (element) {
+            console.log(element);
+        }
+        console.log("By calling This method: ");
+        arr.forEach(print);
+
+        //OR
+        console.log("By direct method: ");
+        arr.forEach(function (element) {
+            console.log(element);
+        })
+
+        //OR
+        //By an ARROW FUNCTION
+        console.log("By ARROW FUNCTION method: ");
+        arr.forEach((element) => {
+            console.log(element);
+        })
+
+
+        //Use of "forEach" in object of an array
+        let arr2 = [
+            {
+                name: "Arvind",
+                marks: 95
+            },
+            {
+                name: "Kitty",
+                marks: 98
+            },
+            {
+                name: "Raghu",
+                marks: 96
+            },
+        ];
+        arr2.forEach(function (student) {
+            console.log(student.name);
+            console.log(student.marks);
+        });
+
+
+
+
+    </script>
+</body>
+
+</html>

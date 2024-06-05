@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Made by &hearts; Arvind</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- ANSWER - 1 -->
+    <!-- <input placeholder="username" type="text" id="user"> -->
+
+    <!-- ANSWER - 3 -->
+    <input type="text" placeholder="enter your name" id="name">
+    <h2></h2>
+    <script>
+        //ANSWER - 1
+        // let inputUser = document.querySelector("#user");
+        // inputUser.addEventListener("mouseout", function () {
+        //     console.log("This value is for mouseout = ", this.value);
+        // })
+        // inputUser.addEventListener("keypress", function () {
+        //     console.log("This value is for keypress = ", this.value);
+        // })
+        // inputUser.addEventListener("scroll", function () {
+        //     console.log("This value is for scroll = ", this.value);
+        // })
+        // inputUser.addEventListener("load", function () {
+        //     console.log("This value is for load = ", this.value);
+        // })
+
+
+        //ANSWER - 2
+        // let body = document.querySelector("body");
+        // let button = document.createElement("button");
+        // button.innerText = "Click Me!";
+        // body.append(button);
+
+        // button.addEventListener("click", function () {
+        //     button.style.color = "green";
+        //     // button.style.backgroundColor = "red";
+        // })
+
+
+        //ANSWER - 3
+        let inputUser = document.querySelector("#name");
+        let heading = document.querySelector("h2");
+        inputUser.addEventListener("input", function () {
+            // let validValue = this.value.replace(/[^a-zA-Z\s]/g, '');
+            let filteredValue = '';
+            for (char of this.value) {
+                if ((char >= 'a' && char <= 'z') || (char >= 'A' && char <= 'Z') || char === ' ') {
+                    filteredValue += char;
+                }
+            }
+            heading.innerText = filteredValue;
+        })
+    </script>
+</body>
+
+</html>

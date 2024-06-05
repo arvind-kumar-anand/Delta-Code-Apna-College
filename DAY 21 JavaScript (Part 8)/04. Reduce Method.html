@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        //THEORY IN IMAGE
+        let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        let finalArray = arr.reduce((accumulator, element) => {
+            console.log(accumulator);
+            return accumulator + element;
+        });
+        console.log(finalArray);
+
+
+        // let arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        // let finalArray2 = arr2.reduce((accumulator, element) => {
+        //     console.log(accumulator);
+        //     return accumulator * element;
+        // });
+        // console.log(finalArray2);
+
+
+        let arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        let finalArray2 = arr2.reduce((accumulator, element) => {
+            console.log(accumulator);
+            return accumulator / element;
+        });
+        console.log(finalArray2);
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

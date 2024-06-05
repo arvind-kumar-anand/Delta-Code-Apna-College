@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function sum(...arguments) {
+            for (let i = 0; i < arguments.length; i++) {
+                console.log("This is : " + arguments[i]);
+            }
+        }
+        sum(1);
+        sum(1, 2);
+        sum(1, 2, 3);
+        sum(1, 2, 3, 4);
+
+        // function min(a, b, c, d) {
+        //     console.log(arguments);
+        //     //This "arguments" is a collection not an "Array"
+        //     console.log(arguments.length);
+        //     // console.log(arguments.push(4)); // Will give an "ERROR"
+        //     //HERE "arguments" is not an array so do not try to "push" any element in this
+        // }
+        // min();
+        // min(1, 2, 3, 4);
+
+
+        function min(...arguments) {
+            //Here arguments is an array
+            // because it collect the value in the form of an Array
+            console.log(arguments.push(4));// Not give error as we are using REST here
+            console.log(arguments.length);
+        }
+        min();
+        min(1, 2, 3, 4);
+
+        function summation(...arguments) {
+            return arguments.reduce((accumulator, elements) => accumulator + elements)
+        }
+        console.log(summation(1, 2, 3, 4));
+
+        function summation(otherArguments, ...arguments) {
+            console.log(otherArguments);
+            return arguments.reduce((accumulator, elements) => accumulator + elements)
+        }
+        console.log(summation("Arvind", 1, 2, 3, 4));
+        console.log(summation(20, 1, 2, 3, 4));
+
+        function summation2(otherArguments1, otherArguments2, ...arguments) {
+            console.log(otherArguments1 + " " + otherArguments2);
+            return arguments.reduce((accumulator, elements) => accumulator + elements)
+        }
+        console.log(summation2("Arvind", "Kitty", 1, 2, 3, 4));
+        console.log(summation2(20, 30, 1, 2, 3, 4));
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        let arr = [1, 2, 3, 4, 5];
+        let double = arr.map((element) => {
+            return 2 * element;
+        }
+
+        )
+        console.log(double);
+
+        let arr2 = [1, 2, 3, 4, 5];
+        let double2 = arr2.map((element) => {
+            return element * element;
+        }
+        )
+        console.log(double2);
+
+        let arr3 = [1, 2, 3, 4, 5];
+        let double3 = arr3.map((element) => {
+            return;
+        }
+        )
+        console.log(double3);
+
+
+        // //Use of "forEach" in object of an array
+        let arr4 = [
+            {
+                name: "Arvind",
+                marks: 95
+            },
+            {
+                name: "Kitty",
+                marks: 98
+            },
+            {
+                name: "Raghu",
+                marks: 96
+            },
+        ];
+        let gpa = arr4.map((element) => {
+            return element.marks / 10;
+        })
+        console.log(gpa);
+
+        //FILTER METHOD
+        //This will form an array only if there is 
+        //true with the operation returned
+        let arr5 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        let finalArr5 = arr5.filter((element) => {
+            return element % 2 == 0; //even and true value will be returned
+        })
+        console.log(finalArr5);
+
+
+    </script>
+</body>
+
+</html>

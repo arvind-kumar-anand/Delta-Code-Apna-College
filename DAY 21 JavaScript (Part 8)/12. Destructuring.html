@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        let nameOfPlayers = ["Arvind", "kitty", "Raghu", "P K Singh", "xyz", "pyq"];
+        // let winner = nameOfPlayers[0];
+        // let runnerUp = nameOfPlayers[1];
+        // let secondRunnerUp = nameOfPlayers[2];
+        // let [winner, runnerUp, secondRunnerUp] = nameOfPlayers;
+        // console.log(winner);
+        // console.log(runnerUp);
+        // console.log(secondRunnerUp);
+        let [winner, runnerUp, ...others] = nameOfPlayers;
+        console.log(winner, runnerUp, others);
+
+    </script>
+</body>
+
+</html>

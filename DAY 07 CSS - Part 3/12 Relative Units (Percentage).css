@@ -1,0 +1,18 @@
+h1 {
+  border: 2px solid black;
+  width: 50%;
+}
+
+#outer {
+  height: 400px;
+  width: 400px;
+  background-color: pink;
+  margin: 50px;
+}
+
+#inner {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  margin: 20%;
+}

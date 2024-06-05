@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    body {
+      background-color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    const student = {
+      name: "Arvind",
+      marks: 95,
+      prop: this, //global scope
+      getName: function () {
+        console.log(this);
+        return this.name;
+      },
+      getMarks: () => {
+        console.log(this); //parent's scope -> This will return window object (this.marks); }
+        return this.marks;
+      },
+
+      getInfo1: function () {
+        setTimeout(() => {
+          console.log(this); //student
+          //Because parent ("getInfo1") will be it's call back 
+          //"getInfo1" function is it's parent
+          // and getInfo1 has Student object as its parent
+        }, 2000);
+      },
+      getInfo2: function () {
+        setTimeout(function () {
+          console.log(this); //window object is call back
+          //but not the parent ("getInfo2")
+        }, 2000);
+      },
+    };
+    student.getName();
+    student.getMarks();
+    student.getInfo1();
+    student.getInfo2();
+  </script>
+</body>
+
+</html>

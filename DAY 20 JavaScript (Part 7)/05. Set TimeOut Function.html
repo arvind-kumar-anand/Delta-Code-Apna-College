@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    body {
+      background-color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    console.log("Hello");
+    setTimeout(() => {
+      console.log("This is setTimeout function executed after 5 sec");
+    }, 5000);
+    // 5000ms means 5 seconds remember
+    console.log("Hello");
+    console.log("Hello");
+    console.log("Hello");
+    const myTimeout = setTimeout(
+      (myGreeting = (a = 5) => {
+        console.log("This is setTimeout function executed after 2 sec : " + a * a * a);
+
+      }),
+      2000
+    );
+    // 2000ms means 2 seconds remember
+    console.log("Hello");
+    console.log("Hello");
+    console.log("Hello");
+    setTimeout(() => {
+      console.log("This is setTimeout function executed after 2 sec : " + "Arvind");
+
+    }, 10000);
+    console.log("Hello");
+    console.log("Hello");
+    console.log("Hello");
+  </script>
+</body>
+
+</html>

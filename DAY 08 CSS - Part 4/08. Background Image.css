@@ -1,0 +1,16 @@
+div {
+    width: 500px;
+    height: 400px;
+    background-color: #7aa874;
+    margin: 10px auto;
+    color: #33cd91;
+    text-align: center;
+}
+
+div {
+    background-image: url(08.BackgroundImageforBG.jpg);
+    background-size: contain;
+    background-size: auto;
+    /* BEST WAY */
+    background-size: cover;
+}

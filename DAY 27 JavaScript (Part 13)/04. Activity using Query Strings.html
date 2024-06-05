@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code by &hearts; Arvind</title>
+    <style>
+        /* #images{
+        height: auto;
+        width: 500px;
+       } */
+    </style>
+</head>
+
+<body>
+    <h1>Made by &hearts; Arvind Kumar Anand</h1>
+    <h1>Get Universities Name of Country</h1>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <input type="text" placeholder="Ente country Name"> <br> <br>
+    <button>Get Colleges Name</button>
+    <ul id="uList">
+
+    </ul>
+    <script>
+        let button = document.querySelector("button");
+
+        button.addEventListener("click", async function () {
+            let input = document.querySelector("input");
+            let country = input.value;
+            // console.log(country); 
+            let arrayOfCollegesName = await getColleges(country);
+            showCollegeName(arrayOfCollegesName);
+            // console.log(arrayOfCollegesName);
+
+        })
+
+        function showCollegeName(arrayOfCollegesName) {
+            let uList = document.querySelector("#uList");
+            uList.innerText = ""; // it will clear the all value of previous present data
+            for (clg of arrayOfCollegesName) {
+                // console.log(clg);
+                // console.log(clg.name);
+                let list = document.createElement("li");
+                list.innerText = clg.name;
+                uList.appendChild(list);
+            }
+        }
+        //API CALL 
+        let url = "http://universities.hipolabs.com/search?name=";
+        async function getColleges(country) {
+            try {
+                let response = await axios.get(url + country);
+                // console.log(response);
+                // console.log(response.data);
+                // console.log(response.data[1].name);
+                // // console.log(response.data[0]);
+                // // console.log(response.data[1]);
+                // // console.log(response.data[2]);
+                return response.data;
+            }
+            catch (error) {
+                console.log("error was = ", error);
+                return "NO COLLEGES FOUND & ERROR FOUND";
+            }
+        }
+        // console.log(getColleges(nepal));
+    </script>
+</body>
+
+</html>

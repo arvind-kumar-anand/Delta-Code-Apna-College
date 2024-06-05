@@ -1,0 +1,52 @@
+.box {
+    height: 100px;
+    width: 300px;
+    background-color: pink;
+    animation-name: fontArvind;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    /* animation-delay: 0.5s; */
+    animation-iteration-count: 1;
+    animation-iteration-count: 2;
+    animation-iteration-count: 3;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-direction: reverse;
+    animation-direction: alternate;
+    animation-direction: alternate-reverse;
+    animation-name: colorchange;
+    animation-name: widthchange;
+}
+
+/* @keyframe Animation_Name */
+@keyframes fontArvind {
+    from {
+        font-size: 20px;
+    }
+
+    to {
+        font-size: 50px;
+    }
+
+}
+
+@keyframes colorchange {
+    from {
+        background-color: red;
+    }
+
+    to {
+        background-color: black;
+    }
+
+}
+
+@keyframes widthchange {
+    from {
+        width: 50px;
+    }
+
+    to {
+        width: 500px;
+    }
+}

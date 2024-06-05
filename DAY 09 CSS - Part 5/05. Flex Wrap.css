@@ -1,0 +1,29 @@
+#container {
+    height: 500px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+h1 {
+    text-align: center;
+
+}
+
+#container div {
+    color: white;
+    /* YE OVER WIDTH PROPERTY KAAM NAHI KAREGA KYUKI FLEX ROW ME AA GAYA HAI */
+    width: 400px;
+    /* YE WIDTH KAAM KAREGA KYUKI SIZE GIVEN SPACE KE INSIDE AA JAYEGA WITH TOTAL WIDTH */
+    width: 200px;
+    /* YE HEIGHT PROPERTY KAAM KAR JAEGA BOCZ FLEX ROW ME HAI */
+    /* AGAR COLUMN ME HOTA TO TOTAL SIZE AVAILABLE DEKHEGE */
+    height: 250px;
+    text-align: center;
+    font-size: 1.5em;
+}

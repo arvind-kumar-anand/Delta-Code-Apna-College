@@ -1,0 +1,29 @@
+.container {
+    width: 600px;
+    height: 300px;
+    background-color: gray;
+    /* display: flex; */
+    display: grid;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px;
+
+}
+
+.items {
+    /* width: 60px;
+    height: 60px; */
+    border: 2px solid black;
+    background-color: #43c943;
+    text-align: center;
+}
+
+#first {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /* SHORTHAND */
+    grid-column: 1/4;
+    /* 1 KE BAAD 3,4,8 TAK SPACE CHAHIYE */
+    grid-column: 1/span 3;
+    grid-column: 1/span 5;
+    grid-column: 1/span 8;
+}

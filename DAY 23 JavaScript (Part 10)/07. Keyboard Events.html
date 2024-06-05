@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Made by &hearts; Arvind</title>
+    <style>
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <input placeholder="move your character">
+    <button>Click Me!</button>
+
+    <script>
+        let button = document.querySelector("button");
+        let input = document.querySelector("input");
+        // input.addEventListener("keydown", function (event) {
+        //     console.log(event);
+        //     console.log("key : " + event.key);
+        //     console.log("code : " + event.code);
+        // })
+
+        // input.addEventListener("keydown", function (event) {
+        //     // console.log(event.key);
+        //     if (event.key == "ArrowUp") {
+        //         console.log("Character was moved Forward");
+        //     }
+        //     else if (event.key == "ArrowDown") {
+        //         console.log("Character was moved Backward");
+        //     }
+        //     else if (event.key == "ArrowRight") {
+        //         console.log("Character was moved Right");
+        //     }
+        //     else if (event.key == "ArrowLeft") {
+        //         console.log("Character was moved Left");
+        //     }
+        // })
+
+        input.addEventListener("keydown", function (event) {
+            // console.log(event.code);
+            if (event.code == "KeyU") {
+                console.log("Character was moves Up");
+            }
+            else if (event.code == "KeyD") {
+                console.log("Character was moves Down");
+            }
+            else if (event.code == "KeyR") {
+                console.log("Character was moved Right");
+            }
+            else if (event.code == "KeyL") {
+                console.log("Character was moved Left");
+            }
+        })
+
+
+
+        // input.addEventListener("keydown", function () {
+        //     console.log("Key was pressed");
+        // })
+        // input.addEventListener("keyup", function () {
+        //     console.log("Key was released");
+        // })
+
+
+
+        // button.addEventListener("click", function (event) {
+        //     console.log(event);
+        //     console.log("Once Clicked");
+        // })
+
+        // button.addEventListener("dblclick", function (event) {
+        //     console.log(event);
+        //     console.log("Double Clicked");
+        // })
+
+
+
+    </script>
+</body>
+
+</html>

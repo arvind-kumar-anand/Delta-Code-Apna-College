@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+
+        const threadsProfileList = [
+
+            // = {  // Without naming a object can also be created
+            threadsProfileArv1 = {
+                username: "@arvind.kumar.anand",
+                followers: 500,
+                Likes: 100,
+                Comments: 70,
+                Share: 80,
+                reposts: 50,
+                content: "This is your content",
+                tags: ["@arvind", "@raghu", "@kitty"],
+            },
+
+            threadsProfileArv2 = {
+                username: "@kitty",
+                followers: 500,
+                Likes: 100,
+                Comments: 70,
+                Share: 80,
+                reposts: 50,
+                content: "This is your content",
+                tags: ["@arvind", "@raghu", "@kitty"],
+            },
+
+            threadsProfileArv3 = {
+                username: "@raghu",
+                followers: 500,
+                Likes: 100,
+                Comments: 70,
+                Share: 80,
+                reposts: 50,
+                content: "This is your content",
+                tags: ["@arvind", "@raghu", "@kitty"],
+            },
+
+            threadsProfileArv4 = {
+                username: "@pk singh",
+                followers: 500,
+                Likes: 100,
+                Comments: 70,
+                Share: 80,
+                reposts: 50,
+                content: "This is your content",
+                tags: ["@arvind", "@raghu", "@kitty"],
+            },
+
+        ];
+
+        console.log(threadsProfileList);
+        console.log(threadsProfileList[0]);
+        console.log(threadsProfileList[1]);
+        console.log(threadsProfileList[2]);
+        console.log(threadsProfileList[3]);
+        console.log(threadsProfileList[1].username);
+        console.log(threadsProfileList[2].followers);
+        threadsProfileList[2].followers = "10000";
+        console.log(threadsProfileList[2].followers);
+        console.log(threadsProfileList[2]);
+        threadsProfileList[2].gender = "Female";
+        console.log(threadsProfileList[2]);
+
+    </script>
+</body>
+
+</html>

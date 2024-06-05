@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    body {
+      background-color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    const square = (a) => a * a;
+    console.log(square(5));
+
+
+    let id = setInterval(() => {
+      console.log("Hello World!");
+    }, 2000);
+    setTimeout(() => {
+      clearInterval(id);
+      console.log("clearInterval funciton is stopped the program");
+    }, 10000);
+
+
+  </script>
+</body>
+
+</html>

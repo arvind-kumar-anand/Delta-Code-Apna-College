@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <script>
+        // function num(a, b) {
+        //     return a + b;
+        // }
+        // let sum = num(5, 7);
+        // console.log(sum);   //OR  console.log(num(5, 7));
+
+        // let newSum = num(num(5, 7), 8);
+        // console.log(newSum);
+
+
+        function num(a, b) {
+            return a + b;
+            console.log("Hello"); //RETURN KE BAAD WALA KAVI EXECUTE NAHI HOTA HAI
+        }
+        num(5, 7);//Nothing in "output" because we didn't use "console" to print the "num"
+        console.log(num(5, 7));
+        let sum = num(5, 7); 
+        console.log(sum);
+
+        let newSum = num(num(5, 7), 8);
+        console.log(newSum);
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

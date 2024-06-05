@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+
+        console.log(Math); //ALL MATH FUNCTION LIBRARY INBUILTED
+        console.log(Math.random()); //GENERATE ONLY NUMBER BETWEEN 0(Inclusive) to 1 (Exclusive)
+        let step2 = 10 * Math.random();//GENERATE ONLY NUMBER BETWEEN 0(Inclusive) to 10 (Exclusive)
+        // let step2 = 11 * Math.random();//GENERATE ONLY NUMBER BETWEEN 0(Inclusive) to 10 (Inclusive)
+        // let step2 = 5 * Math.random();//GENERATE ONLY NUMBER BETWEEN 0 to 5 (Exclusive)
+        // let step2 = 20 * Math.random();//GENERATE ONLY NUMBER BETWEEN 0 to 20 (Exclusive)
+        // let step2 = 30 * Math.random();//GENERATE ONLY NUMBER BETWEEN 0 to 30 (Exclusive)
+        console.log(step2);
+        let step3 = Math.floor(step2);//This will convert number into Nearest Integer value
+        console.log(step3); // generates numbers between 1 to 9 only Integer value
+        console.log(step3 + 1); //generates numbers between 1 to 10 only Integer value
+        console.log(step3); // generates numbers between 1 to 9 only Integer value
+
+        //SINGLE LINE ME
+
+        // Do +1 to generate numbers between 1 to 10 (Integer)
+        console.log((Math.floor(Math.random() * 10)) + 1);
+        //+1 to generate numbers between 1 to 100 (Integer)
+        console.log((Math.floor(Math.random() * 100)) + 1);
+        //+1 to generate numbers between 2 to 101 (Integer)
+        console.log((Math.floor(Math.random() * 100)) + 2);
+        //+20 to generate numbers between 20 to 29 (Integer)
+        console.log((Math.floor(Math.random() * 10)) + 20);
+        //+20 to generate numbers between 20 to 24 (Integer)
+        console.log((Math.floor(Math.random() * 5)) + 20);
+
+
+
+
+
+    </script>
+</body>
+
+</html>

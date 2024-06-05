@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+
+        const threads = {
+            username: "@arvind.kumar.anand",
+            followers: 500,
+            Likes: 100,
+            Comments: 70,
+            Share: 80,
+            reposts: 50,
+            content: "This is your content",
+            tags: ["@arvind", "@kitty", "@raghu", "@pk singh"],
+        };
+        console.log(threads);
+        console.log(threads["username"]);
+        console.log(threads["Likes"]);
+        console.log(threads["Share"]);
+
+
+        //OR BY THIS WAY ALSO
+        console.log(threads.username);
+        console.log(threads.Share);
+        console.log(threads.reposts);
+        console.log(threads.tags);
+        console.log(threads.tags[0]);
+        console.log(threads.tags[1]);
+        console.log(threads.tags[2]);
+
+        
+        // use of Double comma line
+        let variable = "reposts";
+        console.log(threads[variable]);
+        console.log(threads);
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

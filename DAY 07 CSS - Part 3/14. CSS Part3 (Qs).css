@@ -1,0 +1,26 @@
+#ques1 {
+    height: 150px;
+    width: 300px;
+    background-color: grey;
+    border: 5px black dotted;
+    /* margin-top: 20px;
+    margin-right: 1em;
+    margin-bottom: 40px;
+    margin-left: 2em; */
+    margin: 20px 1em 40px 2em;
+    padding: 1em;
+
+}
+
+.ques2 {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: pink;
+}
+
+ul {
+    display: inline;
+}

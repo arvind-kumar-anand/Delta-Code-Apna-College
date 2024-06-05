@@ -1,0 +1,54 @@
+/* ANS-1 */
+#box1 {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    transition: width 1s ease-in 0.5s;
+}
+
+#box1:hover {
+    width: 200px;
+}
+
+
+/* ANS-2 */
+#box2 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transform: translate(200px, 200px) rotate(90deg);
+
+
+}
+
+/* ANS-3 */
+#box3 {
+    width: 100px;
+    height: 100px;
+    background: lightblue;
+    transform: skewX(20deg);
+
+
+}
+
+/* ANS-4 */
+#box4 {
+    width: 100px;
+    height: 100px;
+    background: lightgreen;
+    box-shadow: 2px 2px 5px green;
+    /* EXTRA BY MYSELF*/
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* ANS-5 */
+#myPic {
+    width: 200px;
+    height: 200px;
+    background: pink;
+    background-image: url(12.CSSPart4QsImage.jpg);
+    background-size: cover;
+    opacity: 80%;
+
+}

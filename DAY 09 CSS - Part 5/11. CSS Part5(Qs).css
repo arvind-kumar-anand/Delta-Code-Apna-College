@@ -1,0 +1,45 @@
+/* <h1>Q1</h1> */
+#main {
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    border: 3px solid lightseagreen;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.box {
+
+    height: 100px;
+    width: 100px;
+    background-color: grey;
+    border-radius: 10px;
+    border: 3px solid black;
+    font-size: 50px;
+    text-align: center;
+}
+
+
+/* <h1>Q2</h1> */
+#navbar {
+    height: 50px;
+    width: 900px;
+    border: 3px solid lightseagreen;
+    background-color: pink;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.right {
+    height: 50px;
+    width: 80px;
+    font-size: 24px;
+    margin-left: 10px;
+    line-height: 50px;
+}

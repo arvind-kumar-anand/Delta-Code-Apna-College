@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Made by &hearts; Arvind</title>
+    <style>
+
+
+
+
+    </style>
+</head>
+
+<body>
+
+
+    <h1>Use of "this" in Event Listner</h1>
+    <h3>lets demo it on elements</h3>
+    <p>this is a same paragraph</p>
+    <button>Click Me!</button>
+
+
+    <script>
+        // let button = document.querySelector("button");
+        // let p = document.querySelector("p");
+        // let h1 = document.querySelector("h1");
+        // let h3 = document.querySelector("h3");
+
+        // button.addEventListener("click", function () {
+        //     console.log(this);// HERE THIS MEANS "button" which is mentioned called
+        //     //console.dir(this);
+        //     console.log(this.innerText);
+        //     this.style.backgroundColor = "pink";
+        // })
+        // p.addEventListener("click", function () {
+        //     console.log(this);// HERE THIS MEANS "p" which is mentioned called
+        //     //console.dir(this);
+        //     console.log(this.innerText);
+        //     this.style.backgroundColor = "pink";
+        // })
+        // h1.addEventListener("click", function () {
+        //     console.log(this);// HERE THIS MEANS "h1" which is mentioned called
+        //     //console.dir(this);
+        //     console.log(this.innerText);
+        //     this.style.backgroundColor = "pink";
+        // })
+        // h3.addEventListener("click", function () {
+        //     console.log(this);// HERE THIS MEANS "h3" which is mentioned called
+        //     //console.dir(this);
+        //     console.log(this.innerText);
+        //     this.style.backgroundColor = "pink";
+        // })
+
+
+        //BEST WAY TO DO SO
+        let button = document.querySelector("button");
+        let p = document.querySelector("p");
+        let h1 = document.querySelector("h1");
+        let h3 = document.querySelector("h3");
+        function commonUsedForAll() {
+            console.log(this);
+            //console.dir(this);
+            console.log(this.innerText);
+            this.style.backgroundColor = "pink";
+        }
+
+        button.addEventListener("click", commonUsedForAll);
+        p.addEventListener("click", commonUsedForAll);
+        h1.addEventListener("click", commonUsedForAll);
+        h3.addEventListener("click", commonUsedForAll);
+
+    </script>
+</body>
+
+</html>

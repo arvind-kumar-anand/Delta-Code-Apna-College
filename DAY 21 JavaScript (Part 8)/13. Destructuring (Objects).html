@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        const student = {
+            sName: "Arvind",
+            age: 20,
+            class: "B.tech",
+            address: "Delhi",
+            subject: ["Hindi", "Math", "English", "Science"],
+            username: "arvindkumaranand",
+            password: "arvind@123",
+            city: "Delhi" // It will win in preferebce with "city=Bihar"
+        };
+
+        let { username: user, password: pass, city: place = "Bihar" } = student;
+        console.log({ user, pass });
+        // console.log({ username });//ERROR Because we assigned to "user"
+        // console.log({ password });//ERROR Because we assigned to "pass"
+
+        // let { username, password } = student;
+        // console.log({ username, password });
+
+        //Random printing so not applicable here
+        // let { usernames, passwords, ...others } = student;
+        // console.log({ usernames, passwords, others });
+
+        let { ...others } = student;
+        console.log({ others });
+
+    </script>
+</body>
+
+</html>

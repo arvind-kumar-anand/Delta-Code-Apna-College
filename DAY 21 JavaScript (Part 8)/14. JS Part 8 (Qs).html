@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        //ANSWER - 1
+        let arr = [2, 3, 4, 5, 6, 7];
+        let square = arr.map((element) => {
+            return element * element;
+        });
+        console.log(square);
+
+        let sum = square.reduce((accumulator, element) => {
+            return accumulator + element;
+        });
+        console.log(sum);
+        console.log(sum / arr.length);
+
+        //ANSWER - 2
+        let arr2 = [2, 3, 4, 5, 6, 7];
+        let elementPlus5 = arr2.map((element) => {
+            return 5 + element;
+        });
+        console.log(elementPlus5);
+
+        //ANSWER - 3
+        let arr3 = ["Arvind", "Kitty", "Raghu"];
+        let toUpperCaseOriginalArray = arr3.map((element) => {
+            return element.toUpperCase();
+        });
+        console.log(toUpperCaseOriginalArray);
+
+        //ANSWER - 4
+        let arr4 = [1, 2, 3, 4, 5];
+        let arr5 = [10, 20, 30, 40, 50];
+        let doubleAndReturnArgs = (arr, ...arguments) =>
+            [...arr,
+            ...arguments.map((elements) => {
+                return elements * 2;
+            })
+            ];
+
+        console.log(doubleAndReturnArgs(arr4, 6, 7, 8, 9, 10));
+        console.log(doubleAndReturnArgs(arr5, 60, 70, 80, 90, 100));
+
+        //ANSWER - 5
+        let mergeObjects = (object1, object2) => (
+            { ...object1, ...object2 }
+        )
+        console.log(mergeObjects({ a: 1, b: 2 }, { c: 30, d: 40 }));
+    </script>
+</body>
+
+</html>

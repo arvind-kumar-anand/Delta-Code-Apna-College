@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        //THIS IS OBJECT OF OBJECT
+
+        const threadsProfiles = {
+            arvind: {
+                username: "@arvind.kumar.anand",
+                followers: 500,
+                Likes: 100,
+                Comments: 70,
+                Share: 80,
+                reposts: 50,
+                content: "This is your content",
+                tags: ["@kitty", "@raghu", "@pk singh"],
+            },
+            kitty: {
+                username: "@kitty",
+                followers: 100,
+                Likes: 200,
+                Comments: 50,
+                Share: 100,
+                reposts: 50,
+                content: "This is your content",
+                tags: ["@arvind", "@raghu", "@pk singh"],
+            },
+            raghu: {
+                username: "@raghu",
+                followers: 100,
+                Likes: 200,
+                Comments: 50,
+                Share: 100,
+                reposts: 50,
+                content: "This is your content",
+                tags: ["@arvind", "@raghu", "@kitty"],
+            },
+            Comments: 50,
+            Share: 100,
+            reposts: 50,
+            content: "This is your content",
+            tags: ["@arvind", "@raghu", "@kitty"],
+        };
+
+        console.log(threadsProfiles);
+        console.log(threadsProfiles.arvind);
+        console.log(threadsProfiles.arvind.username);
+        console.log(threadsProfiles.arvind.followers);
+        threadsProfiles.arvind.username = "@arvind.anand";
+        console.log(threadsProfiles.arvind.username);
+        console.log(threadsProfiles.arvind);
+    </script>
+</body>
+
+</html>

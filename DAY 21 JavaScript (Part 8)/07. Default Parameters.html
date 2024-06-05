@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function defaultValue1(a, b = 10) {
+            return a * b;
+        }
+        console.log(defaultValue1(10, 20));
+        console.log(defaultValue1(5));//it will take default value of "b=10"
+
+        //Not a good way in this case is as follow
+        //Never assigned first parameter because of this NaN:-
+        function defaultValue2(a = 10, b) {
+            return a * b;
+        }
+        console.log(defaultValue2(10, 20));
+        console.log(defaultValue2(5));//NaN as only a is assigned here but b is still not assigned
+
+    </script>
+</body>
+
+</html>
