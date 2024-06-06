@@ -1,5 +1,5 @@
 # Apna College Delta Batch Web Development
-Welcome to the **Delta Batch Web Development** projects repository! This collection showcases the work I've completed as part of the **Web Development** course from **Apna College** 🎓
+Welcome to the **Delta Batch Web Development** projects repository! This collection showcases the work I've completed as part of the **Web Development** course from **Apna College** 
 
 ## Overview
 This repository contains all the **Projects** and code that I've developed during the **Web Development Batch.** The course has provided me with a **strong foundation** in web development technologies and practices 🚀
