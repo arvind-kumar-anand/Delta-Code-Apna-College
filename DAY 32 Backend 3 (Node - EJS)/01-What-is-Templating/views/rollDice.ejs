@@ -1,0 +1,15 @@
+<%- include('includes/head.ejs'); %>
+
+    <body>
+        <h1>Dice give value
+            <%= diceVal%>
+                <%= //Math.floor(Math.random()*6 + 1); %>
+
+        </h1>
+        <% if(diceVal==6) { %>
+            <h2>Nice! roll dice again</h2>
+            <% } %>
+
+
+                <%- include('includes/footer.ejs'); %>
+    </body>
