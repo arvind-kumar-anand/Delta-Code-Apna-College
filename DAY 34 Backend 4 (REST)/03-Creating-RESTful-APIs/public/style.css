@@ -1,0 +1,31 @@
+h1 {
+  color: maroon;
+}
+.post {
+  background-color: pink;
+}
+.user {
+  font-style: italic;
+}
+
+a,
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px 5px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff; /* Bootstrap primary blue color */
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+a.button:hover {
+  background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+a.button:active {
+  background-color: #004085; /* Even darker shade for active state */
+}
