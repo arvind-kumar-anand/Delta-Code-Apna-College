@@ -11,7 +11,6 @@
 // }
 // console.log(createRandomUser());
 
-
 const { faker } = require('@faker-js/faker');
 const mysql = require("mysql2");
 
@@ -22,13 +21,19 @@ const connection = await mysql.createConnection({
     password: "mysql@123"
 });
 
-let q = "SHOW TABLES";
+// let q = "SHOW TABLES";
+let q = "INSERT INTO user (id,username,email,password) VALUES (?,?,?,?)";
+let users = [
+    ['1', 'john_doe', 'john.doe@example.com', 'password123']
+    , ['2', 'jane_smith', 'jane.smith@example.com', 'password456']
+]
 try {
-    connection.query(q, (err, results) => {
+    connection.query(q, users, (err, results) => {
         if (err) throw err;
         console.log(results);
-        console.log(results.length);
-        console.log(results[0]);
+        // console.log(results.length);
+        // console.log(results[0]);
+        // console.log(results[1]);
     });
 } catch (err) {
     console.log(err);
