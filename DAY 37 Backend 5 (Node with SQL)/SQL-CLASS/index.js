@@ -13,6 +13,8 @@
 
 const { faker } = require('@faker-js/faker');
 const mysql = require("mysql2");
+const express = require("express");
+const app = express();
 
 const connection = await mysql.createConnection({
     host: 'localhost',
@@ -21,31 +23,70 @@ const connection = await mysql.createConnection({
     password: "mysql@123"
 });
 
-// let q = "SHOW TABLES";
-let q = "INSERT INTO user (id,username,email,password) VALUES (?,?,?,?)";
-let users = [
-    ['1', 'john_doe', 'john.doe@example.com', 'password123']
-    , ['2', 'jane_smith', 'jane.smith@example.com', 'password456']
-]
-try {
-    connection.query(q, users, (err, results) => {
-        if (err) throw err;
-        console.log(results);
-        // console.log(results.length);
-        // console.log(results[0]);
-        // console.log(results[1]);
-    });
-} catch (err) {
-    console.log(err);
-}
-connection.end();
-
 let toGetRandomUser = () => {
-    return {
-        id: faker.string.uuid(),
-        username: faker.internet.userName(),
-        email: faker.internet.email(),
-        password: faker.internet.password()
-    };
+    return [
+        faker.string.uuid(),
+        faker.internet.userName(),
+        faker.internet.email(),
+        faker.internet.password()
+    ];
 }
 // console.log(toGetRandomUser());
+
+// let q = "SHOW TABLES";
+//INSERTING NEW DATA
+// let q = "INSERT INTO user (id,username,email,password) VALUES (?,?,?,?)";
+// let q = "INSERT INTO user (id,username,email,password) VALUES (?)";
+// let data = [];
+// for (let i = 0; i = 100; i++) {
+//     // console.log(toGetRandomUser());
+//     data.push(toGetRandomUser()); //100 FAKE RANDOM USER by FAKER
+// }
+// let user1 = ['1', 'john_doe', 'john.doe@example.com', 'password123']
+// let user2 = ['2', 'jane_smith', 'jane.smith@example.com', 'password456'];
+//BOTH USERS In one array
+// let users = [
+//     ['1', 'john_doe', 'john.doe@example.com', 'password123']
+//     , ['2', 'jane_smith', 'jane.smith@example.com', 'password456']
+// ]
+
+
+// try {
+//     // connection.query(q, users, (err, result) => {
+//     // connection.query(q, [users], (err, result) => {
+//     connection.query(q, [data], (err, result) => { //100 FAKE RANDOM USER by FAKER is passed
+//         if (err) throw err;
+//         console.log(result);
+//         // console.log(result.length);
+//         // console.log(result[0]);
+//         // console.log(result[1]);
+//     });
+// } catch (err) {
+//     console.log(err);
+// }
+// connection.end();
+
+
+app.get("/home", (req, res) => {
+    let q = 'select count(*) from user';
+    try {
+        // connection.query(q, users, (err, result) => {
+        // connection.query(q, [users], (err, result) => {
+        connection.query(q, (err, result) => { //100 FAKE RANDOM USER by FAKER is passed
+            if (err) throw err;
+            console.log(result);
+            // console.log(result.length);
+            // console.log(result[0]);
+            // console.log(result[1]);
+            res.send(result);
+        });
+    } catch (err) {
+        console.log(err);
+        res.send("some error in database");
+    }
+    // res.send("welcome to home page");
+});
+
+app.listen("8080", () => {
+    console.log("server is listening to port 8080");
+})
