@@ -4,10 +4,6 @@ Welcome to the **Delta Batch Web Development** projects repository! This collect
 ## Overview
 This repository contains all the **Projects** and code that I've developed during the **Web Development Batch.** at **Apna College** and It will be continuously updated..... The course has provided me with a **strong foundation** in web development technologies and practices 🚀
 
-## Features
-* **Responsive Design:** Ensuring compatibility with various devices and screen sizes 📱
-* **User Authentication:** Implemented secure user authentication and authorization 🔒
-* **Dynamic Content:** Leveraging JavaScript for dynamic content updates and interactions 💡
 
 ## Contributions
 While the code in this repository is primarily **my own work** from the course, I welcome any **contributions, suggestions, or improvements.** Feel free to open an issue or submit a **pull request** 🤝
