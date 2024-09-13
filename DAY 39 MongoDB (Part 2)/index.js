@@ -10,7 +10,7 @@ main().
     .catch(err => console.log(err));
 
 async function main() {
-    await mongoose.connect('mongodb://127.0.0.1:27017/test'); //TEST OS DATABASE NAME
+    await mongoose.connect('mongodb://127.0.0.1:27017/test'); //test IS DATABASE NAME
 
     // use `await mongoose.connect('mongodb://user:password@127.0.0.1:27017/test');` if your database has auth enabled
 }
