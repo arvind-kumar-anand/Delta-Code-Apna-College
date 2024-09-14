@@ -26,7 +26,8 @@ const bookSchema = mongoose.Schema({
     },
     price: {
         type: Number,
-        min: 1
+        min: 1,
+        // min: [1,"price is too low for selling"]
     },
     discount: {
         type: Number,
@@ -71,5 +72,5 @@ book.findByIdAndUpdate("66e5d0d89342b4470bb3db15", { price: -500 }, { runValidat
     .then((res) => {
         console.log(res);
     }).catch((err) => {
-        console.log(err);
+        console.log(err.errors.price.properties);
     })
