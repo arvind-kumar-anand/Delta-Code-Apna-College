@@ -28,7 +28,38 @@ const bookSchema = mongoose.Schema({
     },
 });
 
-const User = mongoose.model('User', userSchema);
+const book = new mongoose.model('book', bookSchema);
 
+const book1 = new book({
+    title: "Math",
+    author: "RD Sharma",
+    price: 200
+});
+book1.save().then((res) => {
+    console.log(res);
+}).catch((err) => {
+    console.log(err);
+})
 
+// _message: 'book validation failed'
+const book2 = new book({
+    author: "RD Sharma",
+    price: 200
+});
+book2.save().then((res) => {
+    console.log(res);
+}).catch((err) => {
+    console.log(err);
+})
+
+const book3 = new book({
+    title: "Math",
+    author: "RD Sharma",
+    price: "abcd"
+});
+book3.save().then((res) => {
+    console.log(res);
+}).catch((err) => {
+    console.log(err);
+})
 

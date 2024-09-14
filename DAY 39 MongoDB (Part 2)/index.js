@@ -21,7 +21,7 @@ const userSchema = new mongoose.Schema({
     age: Number,
 });
 
-const User = mongoose.model('User', userSchema);
+const User = new mongoose.model('User', userSchema);
 // const Employee = mongoose.model('Employee', userSchema);
 
 
@@ -37,7 +37,6 @@ const User = mongoose.model('User', userSchema);
 //     email: "kitty@gmail.com",
 //     age: 25
 // });
-
 
 // user2.save().then((res) => {
 //     console.log(res);
