@@ -1,0 +1,38 @@
+body {
+  margin-left: 20px;
+}
+
+.chat {
+  background-color: aliceblue;
+  padding: 20px;
+  border-radius: 16px;
+  display: inline-block;
+}
+
+.msg {
+  color: white;
+  background-color: dodgerblue;
+  padding: 2px 10px;
+  border-radius: 16px;
+}
+
+.edit,
+.delete {
+  background-color: white;
+  color: blue;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px 10px;
+}
+
+.edit:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.delete {
+  color: red;
+}
