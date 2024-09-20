@@ -1,3 +1,5 @@
+import "./Products.css";
+
 function Products() {
   let name = "arvind";
   return (
