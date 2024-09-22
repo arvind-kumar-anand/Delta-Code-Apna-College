@@ -1,5 +1,6 @@
 .Products {
   border: 2px solid goldenrod;
   border-radius: 16px;
-  margin: 40px;
+  margin: 20px;
+  padding: 20px;
 }

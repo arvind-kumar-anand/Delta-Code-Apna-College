@@ -1,12 +1,16 @@
 import "./Products.css";
 
-function Products() {
+// function Products({ title, price=1 }) { //DEFAULT VALUE
+function Products({ title, price }) {
+  // console.log(probs);
+  // console.log(probs.title);
   let name = "arvind";
+  let options = ["tech", "durable", ""];
   return (
     <div className="Products">
-      <h3>I am the Title</h3>
-      <h3>2+2 equals to: {2 + 2}</h3>
-      <h3>{name.toUpperCase()} </h3>
+      {/* <h3>{probs.title}</h3> */}
+      <h3>{title}</h3>
+      <h3>Price is Rs. {price}</h3>
     </div>
   );
 }
