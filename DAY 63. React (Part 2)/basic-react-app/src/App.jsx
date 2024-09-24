@@ -1,15 +1,15 @@
 import "./App.css";
 // import Title from "./Title.jsx";
-import ProductTab from "./ProductTab.jsx";
-
-// function Description() {
-//   return <p>I am the Description</p>;
-// }
+// import ProductTab from "./ProductTab.jsx";
+import MsgBoxs from "./MsgBoxs.jsx";
 
 function App() {
   return (
     <div>
-      <ProductTab />
+      {/* <ProductTab /> */}
+      <MsgBoxs userName="Arvind" textColor="gold" />
+      <MsgBoxs userName="Kitty" textColor="pink" />
+      <MsgBoxs userName="Raghu" textColor="blue" />
     </div>
 
     //ALSO CAN BE USED

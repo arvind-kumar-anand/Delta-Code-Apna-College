@@ -15,15 +15,25 @@ import Products from "./Products.jsx";
 // }
 
 //04. Conditionals
-function ProductTab() {
-  // let option1 = ["tech", "durable", "cheap"];
-  return (
-    <div>
-      <Products title="mobile" price={20000} />
-      <Products title="laptop" price={40000} />
-      <Products title="charger" price={20} />
-    </div>
-  );
-}
+// function ProductTab() {
+//   return (
+//     <div>
+//       <Products title="mobile" price={20000} />
+//       <Products title="laptop" price={40000} />
+//       <Products title="charger" price={20} />
+//     </div>
+//   );
+// }
+
+// 05. Dynamic Component Styling
+// function ProductTab() {
+//   return (
+//     <div>
+//       <Products title="mobile" price={20000} />
+//       <Products title="laptop" price={40000} />
+//       <Products title="charger" price={20} />
+//     </div>
+//   );
+// }
 
 export default ProductTab;
