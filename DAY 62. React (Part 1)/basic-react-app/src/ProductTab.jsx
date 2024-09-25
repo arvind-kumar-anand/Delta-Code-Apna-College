@@ -1,6 +1,6 @@
 import Products from "./Products.jsx";
 
-function ProductTab() {
+export default function ProductTab() {
   return (
     <div>
       <Products />
@@ -8,4 +8,4 @@ function ProductTab() {
   );
 }
 
-export default ProductTab;
+

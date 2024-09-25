@@ -2,7 +2,7 @@ import "./Products.css";
 import Price from "./price.jsx";
 
 // LECTURE 1,2,3
-// function Products({ title, price, features1 }) {
+// export default function Products({ title, price, features1 }) {
 //   // console.log(probs);
 //   // console.log(probs.title);
 
@@ -20,7 +20,7 @@ import Price from "./price.jsx";
 // }
 
 //04. Conditionals
-// function Products({ title, price }) {
+// export default function Products({ title, price }) {
 //   return (
 //     <div className="Products">
 //       <h3>{title}</h3>
@@ -32,7 +32,7 @@ import Price from "./price.jsx";
 // }
 
 // 05. Dynamic Component Styling
-// function Products({ title, price }) {
+// export default function Products({ title, price }) {
 //   let isDiscount = price > 20000;
 //   let styles = { backgroundColor: isDiscount ? "gold" : "" };
 //   return (
@@ -45,7 +45,7 @@ import Price from "./price.jsx";
 // }
 
 // 08. Activity _ Amazon Cards
-function Products({ title, idx }) {
+export default function Products({ title, idx }) {
   let oldPrice = [200, 300, 400, 500];
   let newPrice = [600, 700, 800, 900];
   let descriptions = [
@@ -63,7 +63,6 @@ function Products({ title, idx }) {
   );
 }
 
-export default Products;
 // {
 //   title, price, description;
 // }

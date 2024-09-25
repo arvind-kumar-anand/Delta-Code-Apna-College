@@ -1,4 +1,4 @@
-function Hello() {
+export default function Hello() {
   let name = "arvind";
   return (
     <div>
@@ -7,4 +7,3 @@ function Hello() {
   );
 }
 
-export default Hello;

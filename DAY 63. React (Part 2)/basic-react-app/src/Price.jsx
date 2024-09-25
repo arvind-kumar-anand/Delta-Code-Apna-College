@@ -1,4 +1,4 @@
-function Price({ oldPrice, newPrice }) {
+export default function Price({ oldPrice, newPrice }) {
   let oldStyles = {
     textDecoration: "line-through",
   };
@@ -21,5 +21,3 @@ function Price({ oldPrice, newPrice }) {
     </div>
   );
 }
-
-export default Price;

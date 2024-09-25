@@ -1,6 +1,6 @@
 import "./Products.css";
 
-function Products() {
+export default function Products() {
   let name = "arvind";
   return (
     <div className="Products">
@@ -11,4 +11,3 @@ function Products() {
   );
 }
 
-export default Products;

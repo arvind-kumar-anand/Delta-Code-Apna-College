@@ -3,7 +3,7 @@ import "./App.css";
 import ProductTab from "./ProductTab.jsx";
 // import MsgBox from "./MsgBox.jsx";
 
-function App() {
+export default function App() {
   return (
     <div>
       <h1>Block Buster || Deals</h1>
@@ -22,4 +22,3 @@ function App() {
   );
 }
 
-export default App;

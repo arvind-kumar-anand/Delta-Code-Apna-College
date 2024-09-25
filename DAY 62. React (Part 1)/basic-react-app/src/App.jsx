@@ -3,11 +3,11 @@ import "./App.css";
 import Hello from "./Hello.jsx";
 import ProductTab from "./ProductTab.jsx";
 
-// function Description() {
+// export default function Description() {
 //   return <p>I am the Description</p>;
 // }
 
-function App() {
+export default function App() {
   return (
     <div>
       <ProductTab />
@@ -29,4 +29,3 @@ function App() {
   );
 }
 
-export default App;

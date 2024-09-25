@@ -1,7 +1,7 @@
 import Products from "./Products.jsx";
 
 // LECTURE 1,2,3
-// function ProductTab() {
+// export default function ProductTab() {
 //   let option1 = ["tech", "durable", "cheap"];
 //   // let option1 = [<li>tech</li>, <li>durable</li>, <li>cheap</li>];
 //   // let option2 = { a: "service", b: "capability", c: "Resolution" };
@@ -15,7 +15,7 @@ import Products from "./Products.jsx";
 // }
 
 //04. Conditionals
-// function ProductTab() {
+// export default function ProductTab() {
 //   return (
 //     <div>
 //       <Products title="mobile" price={20000} />
@@ -26,7 +26,7 @@ import Products from "./Products.jsx";
 // }
 
 // 05. Dynamic Component Styling
-// function ProductTab() {
+// export default function ProductTab() {
 //   return (
 //     <div>
 //       <Products title="mobile" price={20000} />
@@ -37,7 +37,7 @@ import Products from "./Products.jsx";
 // }
 
 // 08. Activity _ Amazon Cards
-function ProductTab() {
+export default function ProductTab() {
   let styles = {
     display: "flex",
     fleWrap: "wrap",
@@ -54,4 +54,3 @@ function ProductTab() {
   );
 }
 
-export default ProductTab;

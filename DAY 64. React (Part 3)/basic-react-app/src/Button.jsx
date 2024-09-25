@@ -1,4 +1,3 @@
-// (06).Activity;
 export default function MsgBox({ userName, textColor }) {
   return (
     <div>
