@@ -2,15 +2,14 @@ import "./App.css";
 // import Title from "./Title.jsx";
 import ProductTab from "./ProductTab.jsx";
 // import MsgBox from "./MsgBox.jsx";
+import Button from "./Button.jsx";
 
 export default function App() {
   return (
     <div>
-      <h1>Block Buster || Deals</h1>
-      <ProductTab />
-      {/* <MsgBox userName="Arvind" textColor="gold" />
-      <MsgBox userName="Kitty" textColor="pink" />
-      <MsgBox userName="Raghu" textColor="blue" /> */}
+      {/* <h1>Block Buster || Deals</h1>
+      <ProductTab /> */}
+      <Button />
     </div>
 
     //ALSO CAN BE USED
@@ -21,4 +20,3 @@ export default function App() {
     // </>
   );
 }
-
