@@ -1,0 +1,11 @@
+.ticketNum {
+  display: inline-block;
+  padding: 20px;
+  margin: 10px;
+  background-color: #4caf50; /* Green background */
+  color: white; /* White text */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 50px;
+  font-weight: bold;
+  width: 60px;
+}

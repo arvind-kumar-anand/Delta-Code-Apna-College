@@ -176,6 +176,115 @@ import { v4 as uuidv4 } from "uuid";
 // }
 
 //05. Deleting from Arrays
+// export default function App() {
+//   let [todos, setTodos] = useState([{ task: "sample task", id: uuidv4() }]);
+//   let [newTodo, setNewTodo] = useState([""]);
+//   let addNewTodo = () => {
+//     // console.log("add task");
+//     setTodos((preTodo) => {
+//       return [...todos, { task: newTodo, id: uuidv4() }];
+//     });
+//     setNewTodo("");
+//   };
+//   let updateToValue = (event) => {
+//     // console.log(event.target.value);
+//     setNewTodo(event.target.value);
+//   };
+
+//   let deleteTask = (id) => {
+//     setTodos((prevTodos) => {
+//       return prevTodos.filter((todo) => todo.id !== id); // Return a new array
+//     });
+//   };
+//   return (
+//     <div>
+//       <input
+//         onChange={updateToValue}
+//         value={newTodo}
+//         placeholder="add a task"
+//       />
+//       <br />
+//       <br />
+//       <button onClick={addNewTodo}>Add Task</button>
+//       <br /> <br />
+//       <hr />
+//       <h3>To Do List</h3>
+//       <ul>
+//         {todos.map((todo) => {
+//           return (
+//             <li key={todo.id}>
+//               <span>{todo.task}</span> &nbsp;&nbsp;&nbsp;
+//               <button onClick={() => deleteTask(todo.id)}>Delete</button>
+//             </li>
+//           );
+//         })}
+//       </ul>
+//     </div>
+//   );
+// }
+
+//06. Update All in Array
+// export default function App() {
+//   let [todos, setTodos] = useState([{ task: "sample task", id: uuidv4() }]);
+//   let [newTodo, setNewTodo] = useState([""]);
+//   let addNewTodo = () => {
+//     // console.log("add task");
+//     setTodos((preTodo) => {
+//       return [...todos, { task: newTodo, id: uuidv4() }];
+//     });
+//     setNewTodo("");
+//   };
+//   let updateToValue = (event) => {
+//     // console.log(event.target.value);
+//     setNewTodo(event.target.value);
+//   };
+
+//   let deleteTask = (id) => {
+//     setTodos((prevTodos) => {
+//       return prevTodos.filter((todo) => todo.id !== id); // Return a new array
+//     });
+//   };
+
+//   let upperCaseAll = () => {
+//     setTodos((prevTodos) => {
+//       return prevTodos.map((todo) => {
+//         return {
+//           ...todo,
+//           task: todo.task.toUpperCase(),
+//         };
+//       });
+//     });
+//   };
+
+//   return (
+//     <div>
+//       <input
+//         onChange={updateToValue}
+//         value={newTodo}
+//         placeholder="add a task"
+//       />
+//       <br />
+//       <br />
+//       <button onClick={addNewTodo}>Add Task</button>
+//       <br /> <br />
+//       <hr />
+//       <h3>To Do List</h3>
+//       <ul>
+//         {todos.map((todo) => {
+//           return (
+//             <li key={todo.id}>
+//               <span>{todo.task}</span> &nbsp;&nbsp;&nbsp;
+//               <button onClick={() => deleteTask(todo.id)}>Delete</button>
+//             </li>
+//           );
+//         })}
+//       </ul>
+//       <button onClick={upperCaseAll}>Uppercase All</button>
+//     </div>
+//   );
+// }
+
+//07. Update One in Array
 export default function App() {
   let [todos, setTodos] = useState([{ task: "sample task", id: uuidv4() }]);
   let [newTodo, setNewTodo] = useState([""]);
@@ -192,7 +301,35 @@ export default function App() {
   };
 
   let deleteTask = (id) => {
-    console.log("delete value");
+    setTodos((prevTodos) => {
+      return prevTodos.filter((todo) => todo.id !== id); // Return a new array
+    });
+  };
+
+  let upperCaseAll = () => {
+    setTodos((prevTodos) => {
+      return prevTodos.map((todo) => {
+        return {
+          ...todo,
+          task: todo.task.toUpperCase(),
+        };
+      });
+    });
+  };
+
+  let upperCaseOne = (id) => {
+    setTodos((prevTasks) =>
+      prevTasks.map((todo) => {
+        if (todo.id === id) {
+          return {
+            ...todo,
+            task: todo.task.toUpperCase(),
+          };
+        } else {
+          return todo;
+        }
+      })
+    );
   };
 
   return (
@@ -205,19 +342,21 @@ export default function App() {
       <br />
       <br />
       <button onClick={addNewTodo}>Add Task</button>
-
+      <br /> <br />
       <hr />
       <h3>To Do List</h3>
       <ul>
         {todos.map((todo) => {
           return (
             <li key={todo.id}>
-              <span>{todo.task}</span> &nbsp;&nbsp;&nbsp;&nbsp;
+              <span>{todo.task}</span> &nbsp;&nbsp;&nbsp;
               <button onClick={() => deleteTask(todo.id)}>Delete</button>
+              <button onClick={() => upperCaseOne(todo.id)}>Update One</button>
             </li>
           );
         })}
       </ul>
+      <button onClick={upperCaseAll}>Uppercase All</button>
     </div>
   );
 }
