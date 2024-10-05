@@ -1,5 +1,8 @@
 import "./App.css";
-import SearchBox from "./SearchBox.jsx";
+// import SearchBox from "./SearchBox.jsKKx";
+// import InfoBox from "./InfoBox.jsx";
+import WeatherApp from "./WeatherApp.jsx";
+ 
 // import Button from "@mui/material/Button";
 // import DeleteIcon from "@mui/icons-material/Delete";
 // import SendIcon from "@mui/icons-material/Send";
@@ -50,7 +53,9 @@ import SearchBox from "./SearchBox.jsx";
 export default function App() {
   return (
     <>
-      <SearchBox />
+      {/* <SearchBox />
+      <InfoBox /> */}
+      <WeatherApp />
     </>
   );
 }
