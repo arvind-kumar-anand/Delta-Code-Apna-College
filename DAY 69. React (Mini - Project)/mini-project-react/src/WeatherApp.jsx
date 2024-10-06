@@ -12,9 +12,17 @@ export default function WeatherApp() {
     weather: "haze",
   });
 
+  // let updateInfo = (newInfo) => {
+  //   setWeatherinfo(newInfo);
+  // };
   let updateInfo = (newInfo) => {
-    setWeatherinfo(newInfo);
+    if (newInfo) {
+      setWeatherinfo(newInfo);
+    } else {
+      console.error("Failed to update weather info.");
+    }
   };
+
   return (
     <div>
       <h1> Weather App by Arvind</h1>

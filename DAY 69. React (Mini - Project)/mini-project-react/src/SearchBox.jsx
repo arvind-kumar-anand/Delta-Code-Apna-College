@@ -63,7 +63,12 @@ export default function SeachBox({ updateInfo }) {
     console.log(city);
     setCity("");
     let newInfo = await getWeatherInfo();
-    updateInfo(newInfo);
+    // updateInfo(newInfo);
+    if (newInfo) {
+      updateInfo(newInfo); // Only update if newInfo is not null
+    } else {
+      console.error("No weather data received.");
+    }
   };
 
   return (
