@@ -5,11 +5,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simon Games Made by &hearts; Arvind</title>
+    <title>Simon Games Made with &#10084; by Arvind</title>
     <style>
         body {
             text-align: center;
-            /* background-color: pink; */
+            background-image: url(background.jpg);
         }
 
         .btn {
@@ -52,7 +52,7 @@
 </head>
 
 <body>
-    <h1>Made by &hearts; Arvind Kumar Anand</h1>
+    <h1>Made with &hearts; by Arvind Kumar Anand</h1>
     <h1>Simon Says Game</h1>
     <h2>Press Any Key to Start the Game</h2>
     <div class="btn-container">
@@ -116,8 +116,8 @@
                 }
             } else {
                 heading2.innerHTML = `Game Over Your Score = <b>${level}</b> </br> Press Any Key to Re-start the Game`;
-                let body = document.querySelector("body");
-                body.style.backgroundColor = "pink";
+                // let body = document.querySelector("body");
+                // body.style.backgroundColor = "pink";
                 setTimeout(function () {
                     let body = document.querySelector("body");
                     body.style.backgroundColor = "white";

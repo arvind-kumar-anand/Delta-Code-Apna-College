@@ -1,37 +1,38 @@
 h2 {
-    color: coral;
+  color: coral;
 }
 
 span {
-    color: goldenrod;
+  color: goldenrod;
 }
 
 .card {
-    /* border-image: auto; */
-    /* display: inline-block; */
-    width: 500px;
-    border: 2px solid black;
-    border-radius: 20px;
-    padding: 10px;
-    /* margin: 150px; */
-    /* margin: 150px; */
-    margin: 10px;
-    /* margin-top: 0px; */
+  /* border-image: auto; */
+  /* display: inline-block; */
+  width: 500px;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  /* margin: 150px; */
+  /* margin: 150px; */
+  margin: 10px;
+  /* margin-top: 0px; */
 }
 
 img {
-    border-radius: 20px;
-    width: 100%;
-    /* width: 500px; */
+  border-radius: 20px;
+  width: 100%;
+  /* width: 500px; */
 }
 
 #pets {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  /* justify-content: space-evenly; */
+  justify-content: center;
 }
 
-@media(max-width:430px) {
-    #pets {
-        flex-wrap: wrap;
-    }
+@media (max-width: 430px) {
+  #pets {
+    flex-wrap: wrap;
+  }
 }

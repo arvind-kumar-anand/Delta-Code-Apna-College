@@ -41,7 +41,8 @@ p+h3 {
     color: white;
 }
 
-YAA FIR AISE V LIKH SAKTE HAI .upvote+.answer {
+/* YAA FIR AISE V LIKH SAKTE HAI  */
+.upvote+.answer {
     background-color: red;
     color: white;
 }

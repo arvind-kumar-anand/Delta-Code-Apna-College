@@ -1,30 +1,30 @@
 .card {
-
-    width: 200px;
-    height: 360px;
-    border: 2px solid black;
-    display: inline-block;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px black;
-    transition: 0.2s;
-    
+  width: 200px;
+  height: 360px;
+  border: 2px solid black;
+  display: inline-block;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px black;
+  transition: 0.2s;
 }
 
-.desc{
-    padding-left: 40px;
+.desc {
+  padding-left: 40px;
 }
-
 
 img {
-    /* width: 200px;
+  /* width: 200px;
     height: 250px; */
-    width: 200px;
-    border-radius: 10px 10px 0px 0px ;
+  width: 200px;
+  border-radius: 10px 10px 0px 0px;
 }
 
+.card:hover {
+  box-shadow: 6px 6px 10px goldenrod;
+}
 
-.card:hover{
-    box-shadow: 6px 6px 10px goldenrod;
-
+.component {
+  display: flex;
+  justify-content: center;
 }
